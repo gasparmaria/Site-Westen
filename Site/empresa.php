@@ -50,5 +50,49 @@
                 </div>
             </section>
         </div>
+
+        <div class="container-titulo-secao">
+            <h1>Qualidades</h1>
+        </div>
+
+        <div class="container-conteudo empresa-qualidade">
+            <section class="empresa-qualidade__item">
+                <h1 class="empresa-qualidade__titulo"><img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark">Multidisciplinares</h1>
+                
+                <p class="empresa-qualidade__texto">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
+                </p>
+            </section>
+            <section class="empresa-qualidade__item">
+                <h1 class="empresa-qualidade__titulo"><img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark">Criatividade</h1>
+                <p class="empresa-qualidade__texto">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
+                </p>
+            </section>
+            <section class="empresa-qualidade__item">
+                <h1 class="empresa-qualidade__titulo"><img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark">Paciência</h1>
+                <p class="empresa-qualidade__texto">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
+                </p>
+            </section>
+            <section class="empresa-qualidade__item">
+                <h1 class="empresa-qualidade__titulo"><img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark">Alta performance</h1>
+                <p class="empresa-qualidade__texto">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
+                </p>
+            </section>
+            <section class="empresa-qualidade__item">
+                <h1 class="empresa-qualidade__titulo"><img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark">Trabalho em Equipe</h1>
+                <p class="empresa-qualidade__texto">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
+                </p>
+            </section>
+            <section class="empresa-qualidade__item">
+                <h1 class="empresa-qualidade__titulo"><img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark">Atualizados</h1>
+                <p class="empresa-qualidade__texto">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
+                </p>
+            </section>
+        </div>
     </main>
 <?php include 'cabecalho_rodape/rodape.php'; ?>
