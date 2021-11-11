@@ -1,0 +1,217 @@
+.rodape {
+    font-size: 1.6rem;
+    background: var(--color-background-rodape);
+    color: var(--color-titulo-rodape);
+    border-top: 1px solid var(--color-linha-rodape);
+    margin-top: 10vh;
+
+    .rodape-container-fluid {
+        display: flex;
+        justify-content: space-between;
+
+        flex-grow: 0.5;
+    }
+
+    .rodape-item__titulo {
+        font-size: 2.0rem;
+        margin: 0;
+        padding: 0;   
+        
+    }
+
+    .rodape-item__link {
+        display: block;
+        text-decoration: none;
+        margin: 1.5rem 0;
+        color: var(--color-text-secundario);
+    }
+
+    .redes-sociais {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; 
+    }
+
+    .linha-rodape {
+        display: none;
+    }
+
+    .rodape-icone {
+        
+        padding: 0;
+        margin: 0 1.5rem;
+    }
+
+    .rodape-icone svg {
+        width: 40px;
+        height: 40px;
+        transition: all .3s ease;
+        
+    }
+
+    .rodape-icone svg path {
+        fill: transparent;
+        stroke-width: 2;
+        stroke: $color-blue-turquoise;
+    }
+
+    .rodape-icone svg:hover{
+        transform: translateY(-3px);
+    }
+
+    .rodape-icone svg:hover > path {
+        fill: var(--color-hover-icone-rodape);
+        transition: all .3s ease;
+    }
+}
+
+.container .container-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.termos-de-uso a{
+    text-decoration: none;
+    display: block;
+    
+    padding: 1.0rem;
+    border: 1px solid var(--color-titulo-rodape);
+    color: var(--color-titulo-rodape);
+}
+
+@media (max-width: 860px) {
+    .rodape .container {
+        flex-direction: column;
+    }
+
+    .rodape-container-fluid {
+        width: 100%;
+    }
+
+    .rodape .redes-sociais {
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 500px) {
+    .container .container-copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container-copyright .copyright {
+        width: 100%;
+        text-align: center;
+    }
+
+    .termos-de-uso {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        
+    }
+
+    .rodape-container-fluid {
+        flex-direction: column;
+    }
+
+    .rodape .redes-sociais {
+        flex-direction: row;
+    }
+
+    .rodape .redes-sociais .rodape-icone {
+        padding: 0.5rem;
+    }
+
+    .linha-rodape {
+        width: 100%;
+        height: 2px;
+        background: var(--color-gradient-blue);
+        display: block !important;
+        margin: 0;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    .linha-copyright {
+        width: 100%;
+        display: block !important;
+    }
+
+    .rodape-item {
+        text-align: center;
+    }
+
+    .rodape-item__link {
+        display: block;
+        font-size: 1.9rem;
+        padding: 0.3rem;
+        text-decoration: none;
+        margin: 1.5rem 0;
+        text-align: left;
+        color: var(--color-text-secundario);
+    }
+
+    .rodape .rodape-item__titulo {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .rodape-container-fluid {
+        flex-direction: column;
+    }
+
+    .rodape .redes-sociais {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .rodape .redes-sociais .rodape-icone {
+        padding: 0;
+        margin: 0;
+    }
+
+    .linha-rodape {
+        width: 100%;
+        height: 2px;
+        background: var(--color-gradient-blue);
+        display: block !important;
+        margin: 0;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    .linha-copyright {
+        width: 100%;
+        display: block !important;
+    }
+
+    .rodape-item {
+        text-align: center;
+    }
+
+    .rodape-item__link {
+        display: block;
+        font-size: 1.9rem;
+        padding: 0.3rem;
+        text-decoration: none;
+        margin: 1.5rem 0;
+        text-align: left;
+        color: var(--color-text-secundario);
+    }
+
+    .rodape .rodape-item__titulo {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+}
+
+

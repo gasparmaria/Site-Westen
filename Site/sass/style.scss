@@ -1,0 +1,23 @@
+//Abstracts
+@import 'abstracts/_cores';
+@import 'abstracts/_breakpoints';
+
+//Base
+@import 'base/_normalize.scss';
+@import 'base/_fontes.scss';
+@import 'base/_base.scss';
+
+//Components
+@import 'components/_cabecalho';
+@import 'components/_rodape';
+
+//Layout
+@import 'layout/_container';
+
+//Pages
+@import 'pages/_pagina-inicial';
+@import 'pages/_empresa';
+
+//Vendors
+@import 'vendors/_slick.scss';
+@import 'vendors/_slick-theme';

@@ -1,0 +1,249 @@
+.cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 111;
+    height: 10vh;
+    transition: .3s ease;
+}
+
+.scroll {
+    background-color:var(--color-background-cabecalho);
+    
+}
+
+.cabecalho-menu__lista li a {
+    display: block;
+    padding: 1.0rem;
+    text-decoration: none;
+    color: var(--color-cabecalho-link);
+}
+
+.container-logo {
+    flex-grow: 0.1;
+}
+
+.cabecalho .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.cabecalho-menu__lista {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.cabecalho-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+
+.menu-hamburguer {
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s;
+    background: transparent;
+    & div {
+        width: 3.2rem;
+        height: 0.2rem;
+        background: var(--color-background-menu-hamburguer);
+        margin: 0.8rem;
+        transition: all 0.3s;
+    }
+}
+
+@keyframes animationLinksMenu {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.menu-hamburguer--aberto .menu-hamburguer__linha1 {
+    transform: rotate(-45deg) translate(-0.8rem, 0.8rem);   
+}
+
+.menu-hamburguer--aberto .menu-hamburguer__linha2 {
+    opacity: 0;
+}
+
+.menu-hamburguer--aberto .menu-hamburguer__linha3 {
+    transform: rotate(45deg) translate(-0.5rem, -0.7rem);
+}
+
+.container-logo .logo-empresa {
+    width: 6.0rem;
+}
+
+.input-checkbox-dark {
+    display: none;
+    visibility: hidden;
+}
+
+.check-mode-dark {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 25px;
+    background: rgb(12,193,200);
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+    padding: 10px;
+}
+
+.input-checkbox-dark:checked ~ .check-mode-dark{
+    background: #ffffff;
+    border: 1px solid #000000;
+}
+
+.check-mode-dark:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    background: #fff;
+    width: 20px;
+    height: 19px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.input-checkbox-dark:checked ~ .check-mode-dark:before {
+    transform: translateX(-50px);
+}
+
+.check-mode-dark:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    background: rgb(27, 27, 27);
+    width: 20px;
+    height: 19px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateX(50px);
+}
+
+.input-checkbox-dark:checked ~ .check-mode-dark::after {
+    transform: translateX(0px);
+}
+
+.cabecalho-menu__extend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0.3;
+    
+}
+
+.cabecalho-menu__extend .bandeira-idioma {
+    cursor: pointer;
+}
+
+.cabecalho-menu__extend .btn-login{   
+    display: block;
+    text-decoration: none;
+    color: var(--color-cabecalho-link);
+    border: 2px solid var(--color-button);
+    padding: 0.8rem 3.0rem;
+    border-radius: 5px;
+}
+
+@media (max-width: $breakpoint-grande) {
+    .cabecalho .nav-menu {
+        justify-content: space-between;
+    }
+    .cabecalho-menu  {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 70vw;
+        height: 90vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; 
+        transform: translateX(100%);
+        transition: 0.3s ease-in;
+
+    }
+
+    .cabecalho-menu__lista {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .cabecalho-menu__item {
+            opacity: 0;
+            width: 100%;
+            text-align: center;
+
+        }
+    }
+
+    .cabecalho-menu__lista li a {
+        padding: 1.5rem;
+        font-size: 2.0rem;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu-hamburguer--aberto {
+        transform: translateX(0);
+        background-color: var(--color-background-cabecalho);
+    } 
+
+    .cabecalho-menu__extend {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        flex-grow: 0;
+
+        & .label-mode-dark {
+            margin-top: 2.0rem;
+        }
+
+        & .btn-login {
+            width: 90%;
+            margin-top: 1.0rem;
+            padding: 1.5rem;
+        }
+
+        & .bandeira-idioma { 
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            bottom: .5rem;
+            right: 2.0rem;
+        }
+    }
+    
+}
+
+@media (max-width: $breakpoint-pequeno) {
+    .cabecalho-menu {
+        height: 83.5vh;
+    }
+}
+    
+
+
+
