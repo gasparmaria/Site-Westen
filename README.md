@@ -1,1 +1,2 @@
-# Site-Westen
+<h1 align="center">Site Westen</h1>
+<p align="center">🖥️ Projeto realizado para o Trabalho de Conclusão de Módulo do curso de Desenvolvimento de Sistemas da escola ETEC Prof. Basilides de Godoy. Site desenvolvido em HTML, CSS, JavaScript, SASS e PHP.</p>
