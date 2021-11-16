@@ -94,5 +94,22 @@
                 </p>
             </section>
         </div>
+
+        <div class="container-titulo-secao">
+            <h1>Linguagens e Tecnologias</h1>
+        </div>
+
+        <div class="recursos-usados">
+            <div class="container-conteudo">
+                <img src="img/empresa/css-empresa-imagem.png">
+                <img src="img/empresa/html-empresa-imagem.png">
+                <img src="img/empresa/javascript-empresa-imagem.png">
+                <img src="img/empresa/php-empresa-imagem.png">
+                <img src="img/empresa/csharp-empresa-imagem.png">
+                <img src="img/empresa/github-empresa-imagem.png">
+                <img src="img/empresa/android-empresa-imagem.png">
+                <img src="img/empresa/mysql-empresa-imagem.png">
+            </div>
+        </div>
     </main>
 <?php include 'cabecalho_rodape/rodape.php'; ?>

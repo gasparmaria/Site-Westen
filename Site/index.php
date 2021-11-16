@@ -8,7 +8,7 @@
                     <p>Programada para inovar</p>
                 </div> 
                 <div class="container-header-home__img header-home__flex-item">
-                    <img src="img/home/imagem_programando.png" alt="">
+                    <img src="img/home/programando-home-imagem.png" alt="">
                 </div>
             </div> 
             <svg class="header-home-svg" xmlns="http://www.w3.org/2000/svg" viewBox="250 0 640 350">

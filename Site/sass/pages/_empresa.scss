@@ -69,11 +69,11 @@
 .empresa-info__titulo {
     width: 100%;
     margin: 0;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: var(--color-text-principal); 
     margin-bottom: 1.5rem;
-    padding: 0;
+    padding-bottom: 0;  
     text-transform: uppercase;
     position: relative;
 }
@@ -165,6 +165,32 @@
     right: 0;
     top: 0;
 }
+
+.recursos-usados {
+    background: var(--linguagens-tecnologias);
+}
+
+.recursos-usados .container-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    img {
+        margin: 1.0rem 4.0rem;
+        width: 110px;
+        filter: grayscale(100%);
+        transition: 0.2s ease;
+    }
+    img:hover {
+        filter: grayscale(0);
+    }
+}
+
+.recursos-usados {
+    padding: 30px;
+}
+
+
 
 @media (max-width: 1040px) {
     .empresa-info__item {
