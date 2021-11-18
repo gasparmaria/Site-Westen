@@ -139,6 +139,7 @@
     grid-gap: 4.0rem 20.0rem;
     position: relative;
     &__titulo {
+        width: 100%;
         margin: 0;
         margin-bottom: 1.5rem;
         font-size: 2.8rem;
@@ -146,6 +147,9 @@
         color: var(--color-text-principal);
         padding: 0.5rem 0;
         position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__texto {
@@ -160,10 +164,7 @@
 }
 
 .empresa-qualidade__titulo .checkmark {
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
+    width: 45px;     
 }
 
 .recursos-usados {
@@ -179,6 +180,7 @@
         margin: 1.0rem 4.0rem;
         width: 110px;
         filter: grayscale(100%);
+        cursor: pointer;
         transition: 0.2s ease;
     }
     img:hover {
@@ -190,7 +192,94 @@
     padding: 30px;
 }
 
+.empresa-funcionarios {
+    margin-top: 50px;
+}
 
+.empresa-funcionarios .container-conteudo {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px 80px;
+    padding: 0 20px;
+}
+
+.empresa-funcionario {
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.0rem 4.0rem;
+        flex-wrap: wrap;
+        background: var(--color-dark-white);
+        position: relative;
+    }
+    &__item::after, &__item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: 0.3s ease-in-out;
+    }
+    &__item::before {
+        border-left: 1px solid var(--color-text-secundario);
+        border-right: 1px solid var(--color-text-secundario);
+        transform: scaleY(0)
+    }
+    &__item::after {
+        border-top: 1px solid var(--color-text-secundario);
+        border-bottom: 1px solid var(--color-text-secundario);
+        transform: scaleX(0);
+    }
+    &__item:hover:before, &__item:hover::after{
+        transform: scale(1,1);
+    }
+    &__container-img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    &__texto {
+        padding-left: 5.0rem;
+        flex: 1 1 300px;
+        position: relative;
+        color: var(--color-text-secundario);
+    }
+    &__texto::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 20px;
+        border: 1px solid rgb(0, 158, 185);;
+    }
+    &__nome {
+        margin: 0;
+        padding: 0;
+        color: var(--color-text-principal);
+        font-size: 2.8rem;
+    }
+    &__cargo-lista {
+        font-size: 1.7rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        &__item {
+            margin-top: 3px;    
+            
+        }
+    }
+
+}
 
 @media (max-width: 1040px) {
     .empresa-info__item {
@@ -236,5 +325,94 @@
 @media (max-width: 1024px) {
     .empresa-qualidade {
         width: 90%;
+    }
+}
+
+@media (max-width: 1115px) {
+    .empresa-funcionarios .container-conteudo {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px 80px;
+        padding: 0 0px;
+    }
+    
+    .empresa-funcionario {
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            flex-wrap: wrap;
+            background: var(--color-dark-white);
+            position: relative;
+            text-align: center;
+            padding: 10px;
+        }
+        &__item::after, &__item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: 0.3s ease-in-out;
+        }
+        &__item::before {
+            border-left: 1px solid var(--color-text-secundario);
+            border-right: 1px solid var(--color-text-secundario);
+            transform: scaleY(0)
+        }
+        &__item::after {
+            border-top: 1px solid var(--color-text-secundario);
+            border-bottom: 1px solid var(--color-text-secundario);
+            transform: scaleX(0);
+        }
+        &__item:hover:before, &__item:hover::after{
+            transform: scale(1,1);
+        }
+        &__container-img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            margin: 10px;
+        }
+        &__img {
+            display: block;
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+        &__texto {
+            margin-top: 10px;
+            padding-left: 0px;
+            flex: 1 1 300px;
+            position: relative;
+            color: var(--color-text-secundario);
+        }
+        &__texto::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0px;
+            border: 1px solid rgb(0, 158, 185);;
+        }
+        &__nome {
+            margin: 0;
+            padding: 0;
+            color: var(--color-text-principal);
+            font-size: 2.8rem;
+        }
+        &__cargo-lista {
+            font-size: 1.7rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            &__item {
+                margin-top: 3px;    
+                
+            }
+        }
+    
     }
 }

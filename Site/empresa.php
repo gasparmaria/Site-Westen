@@ -57,38 +57,38 @@
 
         <div class="container-conteudo empresa-qualidade">
             <section class="empresa-qualidade__item">
-                <h1 class="empresa-qualidade__titulo"><img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark">Multidisciplinares</h1>
+                <h1 class="empresa-qualidade__titulo">Multidisciplinares<img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark"></h1>
                 
                 <p class="empresa-qualidade__texto">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
                 </p>
             </section>
             <section class="empresa-qualidade__item">
-                <h1 class="empresa-qualidade__titulo"><img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark">Criatividade</h1>
+                <h1 class="empresa-qualidade__titulo">Criatividade<img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark"></h1>
                 <p class="empresa-qualidade__texto">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
                 </p>
             </section>
             <section class="empresa-qualidade__item">
-                <h1 class="empresa-qualidade__titulo"><img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark">Paciência</h1>
+                <h1 class="empresa-qualidade__titulo">Paciência<img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark"></h1>
                 <p class="empresa-qualidade__texto">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
                 </p>
             </section>
             <section class="empresa-qualidade__item">
-                <h1 class="empresa-qualidade__titulo"><img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark">Alta performance</h1>
+                <h1 class="empresa-qualidade__titulo">Alta performance<img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark"></h1>
                 <p class="empresa-qualidade__texto">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
                 </p>
             </section>
             <section class="empresa-qualidade__item">
-                <h1 class="empresa-qualidade__titulo"><img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark">Trabalho em Equipe</h1>
+                <h1 class="empresa-qualidade__titulo">Trabalho em Equipe<img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark"></h1>
                 <p class="empresa-qualidade__texto">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
                 </p>
             </section>
             <section class="empresa-qualidade__item">
-                <h1 class="empresa-qualidade__titulo"><img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark">Atualizados</h1>
+                <h1 class="empresa-qualidade__titulo">Atualizados<img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark"></h1>
                 <p class="empresa-qualidade__texto">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
                 </p>
@@ -111,5 +111,88 @@
                 <img src="img/empresa/mysql-empresa-imagem.png">
             </div>
         </div>
+
+        <div class="container-titulo-secao">
+            <h1>Funcionários</h1>
+        </div>
+
+        <section class="empresa-funcionarios">
+            <div class="container-conteudo">
+                <div class="empresa-funcionario__item">
+                    <div class="empresa-funcionario__container-img">
+                        <img class="empresa-funcionario__img" src="img/empresa/foto-perfil-gabriel.jpg">
+                    </div>
+                    <div class="empresa-funcionario__texto">
+                        <h1 class="empresa-funcionario__nome">Gabriel Soares</h1>
+                        <ul class="empresa-funcionario__cargo-lista">
+                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Front-End</li>
+                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Back-End</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="empresa-funcionario__item">
+                    <div class="empresa-funcionario__container-img">
+                        <img class="empresa-funcionario__img" src="img/empresa/foto-perfil-gabriel.jpg">
+                    </div>
+                    <div class="empresa-funcionario__texto">
+                        <h1 class="empresa-funcionario__nome">Gabriel Soares</h1>
+                        <ul class="empresa-funcionario__cargo-lista">
+                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Front-End</li>
+                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Back-End</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="empresa-funcionario__item">
+                    <div class="empresa-funcionario__container-img">
+                        <img class="empresa-funcionario__img" src="img/empresa/foto-perfil-gabriel.jpg">
+                    </div>
+                    <div class="empresa-funcionario__texto">
+                        <h1 class="empresa-funcionario__nome">Gabriel Soares</h1>
+                        <ul class="empresa-funcionario__cargo-lista">
+                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Front-End</li>
+                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Back-End</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="empresa-funcionario__item">
+                    <div class="empresa-funcionario__container-img">
+                        <img class="empresa-funcionario__img" src="img/empresa/foto-perfil-gabriel.jpg">
+                    </div>
+                    <div class="empresa-funcionario__texto">
+                        <h1 class="empresa-funcionario__nome">Gabriel Soares</h1>
+                        <ul class="empresa-funcionario__cargo-lista">
+                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Front-End</li>
+                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Back-End</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="empresa-funcionario__item">
+                    <div class="empresa-funcionario__container-img">
+                        <img class="empresa-funcionario__img" src="img/empresa/foto-perfil-gabriel.jpg">
+                    </div>
+                    <div class="empresa-funcionario__texto">
+                        <h1 class="empresa-funcionario__nome">Gabriel Soares</h1>
+                        <ul class="empresa-funcionario__cargo-lista">
+                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Front-End</li>
+                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Back-End</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="empresa-funcionario__item">
+                    <div class="empresa-funcionario__container-img">
+                        <img class="empresa-funcionario__img" src="img/empresa/foto-perfil-gabriel.jpg">
+                    </div>
+                    <div class="empresa-funcionario__texto">
+                        <h1 class="empresa-funcionario__nome">Gabriel Soares</h1>
+                        <ul class="empresa-funcionario__cargo-lista">
+                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Front-End</li>
+                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Back-End</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
     </main>
 <?php include 'cabecalho_rodape/rodape.php'; ?>
