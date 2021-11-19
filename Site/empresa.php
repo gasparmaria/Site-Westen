@@ -1,5 +1,5 @@
 <?php include 'cabecalho_rodape/cabecalho.php'; ?>
-    <main class="conteudo-pagina-margin-top">
+    <main class="conteudo-pagina-margin-top" style="margin-bottom: 10vh;">
         <div class="container-conteudo">
             <section class="empresa-info__item empresa-info__item-background-before">
                 <div class="empresa-info__texto empresa-info__flex-item">

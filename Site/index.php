@@ -1,6 +1,5 @@
 <?php include 'cabecalho_rodape/cabecalho.php'; ?>
-
-    <main>
+    <main style="margin-bottom: 10vh;">
         <div class="container-header-home">
             <div class="container-conteudo">
                 <div class="container-header-home__texto header-home__flex-item">
