@@ -87,14 +87,36 @@ $(document).ready(function(){
         }
     });
 
-    //Slide show home
-    $('.container-slideshow__box').slick({
-        autoplay: true,
-        arrows: false,
+
+    $('.portifolio-slider').slick({
         dots: true,
-        autoplaySpeed: 3000,
-        fade: true,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        autoPlay: true,
+        autoplaySpeed: 2000,  
+        responsive: [
+            {
+            breakpoint: 1100,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 2,
+            }
+            },
+            {
+            breakpoint: 545,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '50px',
+                slidesToShow: 1
+            }
+            }
+        ]
     });
+
 
     //Alterar cor do menu com rolagem do scroll;
     const cabecalho = document.querySelector('.cabecalho');
