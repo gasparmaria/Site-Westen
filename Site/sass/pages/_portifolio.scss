@@ -5,22 +5,14 @@
     align-items: center;
     margin: 0 auto;
     color: #fff;    
-    &__item:nth-child(2n-1) {
-        background: linear-gradient(0deg, #0025c9, #000);
-    }
-    &__item:nth-child(2n+0) {
-        background: linear-gradient(0deg, #007483, #000);
-    }
-    &__item:nth-child(3n+0) {
-        background: linear-gradient(0deg, #00ad87, #000);
-    }
     &__item {
         padding: 0;
         border-radius: 15px;
         transition: all .4s ease;
         position: relative;
         transition: 0.2s ease;
-        cursor: pointer;      
+        cursor: pointer;     
+        background: linear-gradient(0deg, #007483, #000); 
     }
     &__item:hover > &__img{
         opacity: 0.5;
@@ -54,8 +46,8 @@
         padding: 10px;     
         font-size: 1.6rem;
         opacity: 0;
-        padding-left: 20px;
-        transition: 0.3s ease;
+        padding-left: 30px;
+        transition: 0.3s ease-in-out;
     }
     &__img {
         width: 100%;

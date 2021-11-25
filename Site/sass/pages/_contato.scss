@@ -1,0 +1,226 @@
+.formulario-contato {
+    color: var(--color-text-principal);
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    &__conteudo {
+        padding: 30px 120px;
+        flex: 1 1;
+    }
+    &__titulo {
+        text-transform: uppercase;
+        color: $color-blue-turquoise;
+        padding-bottom: 5px;
+        position: relative;
+        margin: 0;
+        font-size: 2.8rem;
+    }
+    &__titulo:after {
+        content: '';
+        display: block;
+        width: 70px;
+        height: 3px;
+        margin-top: 10px;
+        background-color: $color-blue-turquoise;
+    }
+    &__campos {
+        position: relative;
+        margin: 50px 0;
+        font-size: 1.6rem;
+    }   
+    &__input {
+        letter-spacing: 0.12rem;
+        display: block;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $color-blue-turquoise;
+        width: 100%;
+        padding: 0;
+        background: none;
+        color: var(--color-text-principal);
+        font-size: 1.8rem;
+        transition: 0.3s ease;
+    }
+    &__input:focus {
+        padding: 12px 0;
+
+    }
+    &__input:focus ~ .formulario-contato__label,
+    &__input:valid ~ .formulario-contato__label {
+        top: -20px;
+        left: 0;
+        font-size: 1.3rem;
+    }
+    &__label {
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        pointer-events: none;
+        transition: 0.5s ease;
+    }
+    &__background-container {
+        width: 100%;
+        flex: 1.5 1;
+    }
+    
+    &__background-container__imagem {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    
+    &__button-submit {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border: 2px solid $color-blue-turquoise;
+        transition: 0.2s ease;
+        background: none;
+    }
+    
+    &__button-submit:hover {
+        cursor: pointer;
+        background-color: $color-blue-turquoise; 
+    }
+    
+    &__link-submit {
+        color: $color-blue-turquoise;
+        display: block;
+        padding: 13px 40px;
+        text-decoration: none;
+        font-size: 1.8rem;
+    }
+
+    &__link-submit:hover {
+        color: #fff;
+    }
+    
+    .contato-textarea {
+        margin-top: 10px;
+        display: block;
+        outline: none;
+        padding: 10px;
+        resize: none;
+        width: 100%;
+        border: 2px solid $color-blue-turquoise;;
+        background: none;
+        border-radius: 5px;
+        font-size: 1.8rem;
+        color: var(--color-text-principal);
+        letter-spacing: 0.12rem;
+    }
+}
+    
+@media (max-width: 1020px) {
+    .formulario-contato {
+        flex-direction: column;
+        &__conteudo {
+            padding: 30px 60px;
+            flex: 1 1;
+        }
+        &__titulo {
+            text-transform: uppercase;
+            color: $color-blue-turquoise;
+            padding-bottom: 5px;
+            position: relative;
+            margin: 0;
+            font-size: 2.8rem;
+        }
+        &__titulo:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 3px;
+            margin-top: 10px;
+            background-color: $color-blue-turquoise;
+        }
+        &__campos {
+            position: relative;
+            margin: 50px 0;
+            font-size: 1.6rem;
+        }   
+        &__input {
+            letter-spacing: 0.12rem;
+            display: block;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid $color-blue-turquoise;
+            width: 100%;
+            padding: 0;
+            background: none;
+            color: var(--color-text-principal);
+            font-size: 1.8rem;
+            transition: 0.3s ease;
+        }
+        &__input:focus {
+            padding: 12px 0;
+    
+        }
+        &__input:focus ~ .formulario-contato__label,
+        &__input:valid ~ .formulario-contato__label {
+            top: -20px;
+            left: 0;
+            font-size: 1.3rem;
+        }
+        &__label {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            pointer-events: none;
+            transition: 0.5s ease;
+        }
+        &__background-container {
+            order: -1;
+        }
+        
+        &__background-container__imagem {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+        
+        &__button-submit {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border: 2px solid $color-blue-turquoise;
+            transition: 0.2s ease;
+            background: none;
+        }
+        
+        &__button-submit:hover {
+            cursor: pointer;
+            background-color: $color-blue-turquoise; 
+        }
+        
+        &__link-submit {
+            color: $color-blue-turquoise;
+            display: block;
+            padding: 13px 40px;
+            text-decoration: none;
+            font-size: 1.8rem;
+        }
+    
+        &__link-submit:hover {
+            color: #fff;
+        }
+        
+        .contato-textarea {
+            margin-top: 10px;
+            display: block;
+            outline: none;
+            padding: 10px;
+            resize: none;
+            width: 100%;
+            border: 2px solid $color-blue-turquoise;;
+            background: none;
+            border-radius: 5px;
+            font-size: 1.8rem;
+        }
+    }
+}
+
