@@ -31,7 +31,7 @@
       </div>
     </html>
   ";
-  
+
   //Emails para quem será enviado o formulário
   $destino = "contact.westen@gmail.com";
   $assunto = "Contato pelo Site";
@@ -42,7 +42,9 @@
   $headers .= "From: $nomeEmpresa <$email>";
 
   //Enviar
-  mail($destino, $assunto, $arquivo, $headers);
-  
-  header('location:email-enviado.php');
+  if(mail($destino, $assunto, $arquivo, $headers)) {
+    header('location:email-enviado.php');
+  } else {
+    header('location:email-erro.php');
+  }
 ?>

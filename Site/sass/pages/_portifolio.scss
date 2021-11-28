@@ -1,9 +1,18 @@
+.portifolio-titulo {    
+    color: #fff;
+    background: var(--color-gradient-blue);
+    padding: 2.5rem 0rem;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
 .portifolio-slider {
     display: grid;
     justify-content: space-around;
     grid-template-columns: repeat(auto-fit, minmax(250px, 200px));
     align-items: center;
     margin: 0 auto;
+    margin-top: 15px;
     color: #fff;    
     &__item {
         padding: 0;

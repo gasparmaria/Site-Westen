@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="styleSheet" type="text/css" href="./css/style.css">
     <title>Westen</title>
-
 </head>
 <body>
     <header class="cabecalho">
@@ -28,7 +27,7 @@
                         <li class="cabecalho-menu__item"><a href="empresa.php">Empresa</a><li>
                         <li class="cabecalho-menu__item"><a href="portifolio.php">Portifólio</a><li>
                         <li class="cabecalho-menu__item"><a href="parceiros.php">Parceiros</a><li>
-                        <li class="cabecalho-menu__item"><a href="trabalhe_conosco.php">Trabalhe conosco</a><li>
+                        <li class="cabecalho-menu__item"><a href="trabalhe-conosco.php">Trabalhe conosco</a><li>
                         <li class="cabecalho-menu__item"><a href="contato.php">Contato</a><li>
                     </ul>
                     <div class="cabecalho-menu__extend">

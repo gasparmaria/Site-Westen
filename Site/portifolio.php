@@ -1,5 +1,10 @@
 <?php include 'cabecalho_rodape/cabecalho.php'; ?>
-    <main class="conteudo-pagina-margin-top" style="margin-bottom: 10vh; margin-top: 12vh">
+    <main class="conteudo-pagina-margin-top" style="margin-bottom: 10vh; margin-top: 10vh">
+    <h1 class="portifolio-titulo">
+        <div class="container-conteudo">
+            Conheça alguns dos nossos projetos!
+        </div>    
+    </h1>
         <div class="container-conteudo">
             <section class="portifolio-slider">
                 <div class="portifolio-slider__item">

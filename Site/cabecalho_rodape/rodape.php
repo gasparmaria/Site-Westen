@@ -20,21 +20,27 @@
                 <hr class="linha-rodape">
             </div>
             <section class="rodape-item redes-sociais">
-                <a class="rodape-item__link rodape-icone" href="#">
-                    <?php include 'svg/iconeFacebook.php'; ?>
-                </a>
+                <div class="rodape-item__info-empresa" style="text-align: center;">
+                    <p>R. Guaipá, 678 - Vila Leopoldina, São Paulo - SP, 05089-000</p>
+                    <p>Telefone: (11) 3834-4111</p>
+                </div>
+                <div class="rodape-item__container">
+                    <a class="rodape-item__link rodape-icone" href="#">
+                        <?php include 'svg/iconeFacebook.php'; ?>
+                    </a>
 
-                <a class="rodape-item__link rodape-icone" href="#">
-                    <?php include 'svg/iconeInstagram.php'; ?>
-                </a>
+                    <a class="rodape-item__link rodape-icone" href="#">
+                        <?php include 'svg/iconeInstagram.php'; ?>
+                    </a>
 
-                <a class="rodape-item__link rodape-icone" href="#">
-                    <?php include 'svg/iconeLinkedIn.php'; ?>
-                </a>
+                    <a class="rodape-item__link rodape-icone" href="#">
+                        <?php include 'svg/iconeLinkedIn.php'; ?>
+                    </a>
 
-                <a class="rodape-item__link rodape-icone" href="mailto:contact.westen@gmail.com" subject="Comunicado">
-                    <?php include 'svg/iconeGmail.php'; ?>
-                </a>
+                    <a class="rodape-item__link rodape-icone" href="mailto:contact.westen@gmail.com" subject="Comunicado">
+                        <?php include 'svg/iconeGmail.php'; ?>
+                    </a>
+                </div>
             </section>
         </div>
         <div class="container-conteudo">

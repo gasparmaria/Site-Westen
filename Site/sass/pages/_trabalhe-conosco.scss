@@ -1,11 +1,30 @@
-.formulario-contato {
-    color: var(--color-text-principal);
+.formulario-trabalhe-conosco {
+    padding: 0;
     display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    &__conteudo {
-        padding: 30px 120px;
-        flex: 1 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--color-text-principal);
+    &__dados-pessoais {
+        flex-grow: 1;
+        flex-basis: 300px;
+        padding: 2.5rem;
+        position: relative;
+    }
+    &__dados-pessoais:after {
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0; 
+        right: 0;
+        position: absolute;
+        border-right: 2px solid $color-blue-turquoise;
+        transform: scaleY(0.4);
+        z-index: -1;
+    }
+    &__dados-profissionais {
+        flex-grow: 1;
+        flex-basis: 300px;
+        padding: 2.5rem;
     }
     &__titulo {
         text-transform: uppercase;
@@ -22,6 +41,11 @@
         height: 3px;
         margin-top: 10px;
         background-color: $color-blue-turquoise;
+    }
+    &__subtitulo {
+        margin-top: 5px;
+        font-size: 1.6rem;
+        color: var(--color-text-dados-titulo);
     }
     &__campos {
         position: relative;
@@ -45,12 +69,31 @@
         padding: 12px 0;
 
     }
-    &__input:focus ~ .formulario-contato__label,
-    &__input:valid ~ .formulario-contato__label {
+    &__input:focus ~ .formulario-trabalhe-conosco__label,
+    &__input:valid ~ .formulario-trabalhe-conosco__label {
         top: -20px;
         left: 0;
         font-size: 1.3rem;
     }
+    .formulario-trabalhe-conosco__select {
+        appearance: none;
+        outline: none;
+        border: 0 !important;
+        position: relative;
+        width: 200px;
+        font-size: 1.6rem;
+        padding: 1.2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+        background: $color-blue-turquoise;
+        transition: 0.2s ease;
+    }
+    
+    .formulario-trabalhe-conosco__select:hover {
+        background-color: rgb(12, 141, 150);
+    }
+
     &__label {
         position: absolute;
         top: -10px;
@@ -96,20 +139,116 @@
     &__link-submit:hover {
         color: #fff;
     }
-    
-    .contato-textarea {
-        margin-top: 10px;
+
+    &__checkbox-radio-container {
         display: block;
-        outline: none;
-        padding: 10px;
-        resize: none;
-        width: 100%;
-        border: 2px solid $color-blue-turquoise;
-        background: none;
-        border-radius: 5px;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 1.6rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        & input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        & .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: rgb(211, 211, 211);
+        }
+        & .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+    }
+
+    &__checkbox-radio-container:hover input ~ .checkmark {
+        background-color: rgb(172, 172, 172);
+    }
+
+    &__checkbox-radio-container input:checked ~ .checkmark {
+        background-color: $color-blue-turquoise;
+    }
+
+    &__checkbox-radio-container input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    &__checkbox-radio-container .checkmark:after {
+        left: 6px;
+        top: 2.2px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    &__curriculo{
+        & p {
+            margin: 2.5rem 0;
+            font-size: 1.6rem;
+        }
+        & p:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    &__curriculo-container {
+        position: relative;
+        & input {
+            display: none;
+        }
+        & label {
+            width: 210px;
+            color: white;
+            background-color: rgb(1, 178, 190);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            top: 0;
+            left: 0;
+            font-size: 1.6rem;
+            padding: 7px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.2s ease;
+            & img {
+                width: 30px; 
+                margin-right: 10px;   
+            }
+        }
+        & label:hover {
+            background-color: rgb(12, 141, 150);
+        }
+    }
+    .formulario-trabalhe-conosco__buton-submit {
+        border: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 4.5rem;
         font-size: 1.8rem;
-        color: var(--color-text-principal);
-        letter-spacing: 0.12rem;
+        background: none;
+        transition: 0.2s ease;
+        color: $color-blue-turquoise;
+        padding: 10px 40px;
+        border: 2px solid $color-blue-turquoise;
+        cursor: pointer;
+    }
+    .formulario-trabalhe-conosco__buton-submit:hover {
+        background-color: $color-blue-turquoise;
+        color: #fff;
     }
 }
 
@@ -168,8 +307,8 @@
             padding: 12px 0;
     
         }
-        &__input:focus ~ .formulario-contato__label,
-        &__input:valid ~ .formulario-contato__label {
+        &__input:focus ~ .formulario-trabalhe-conosco__label,
+        &__input:valid ~ .formulario-trabalhe-conosco__label {
             top: -20px;
             left: 0;
             font-size: 1.3rem;
@@ -217,19 +356,6 @@
     
         &__link-submit:hover {
             color: #fff;
-        }
-        
-        .contato-textarea {
-            margin-top: 10px;
-            display: block;
-            outline: none;
-            padding: 10px;
-            resize: none;
-            width: 100%;
-            border: 2px solid $color-blue-turquoise;;
-            background: none;
-            border-radius: 5px;
-            font-size: 1.8rem;
         }
     }
 }

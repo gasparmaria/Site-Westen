@@ -1,6 +1,6 @@
 <?php include 'cabecalho_rodape/cabecalho.php'; ?>
     <main class="conteudo-pagina-margin-top" style="margin-top: 10vh; ">
-        <form class="formulario-contato" action="formulario/contato-formulario.php" method="POST">
+        <form class="formulario-contato" action="formulario/contato-form.php" method="POST">
             <div class="formulario-contato__conteudo">
                 <h1 class="formulario-contato__titulo">
                     Contato
@@ -32,4 +32,7 @@
             </div>
         </form>
     </main>
+    <div class="iframe-container">
+        <iframe class="iframe-container__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14633.28862947682!2d-46.7286281!3d-23.5209127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x671c9325c275132e!2sETEC%20Professor%20Basilides%20de%20Godoy.!5e0!3m2!1spt-BR!2sbr!4v1605321889136!5m2!1spt-BR!2sbr" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>   
 <?php include 'cabecalho_rodape/rodape.php'; ?>
