@@ -134,6 +134,8 @@ $(document).ready(function(){
 
     });
 
-    
-
+    let inputFileText = document.querySelector('#arquivo')
+    inputFileText.addEventListener('change', function(){
+        document.querySelector('.labelFileText').innerHTML += this.files[0].name;
+    });
 });

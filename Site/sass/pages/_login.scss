@@ -1,0 +1,125 @@
+.body-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2e2e2e;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.formulario-login {
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    padding: 50px 30px;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 50%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.formulario-login__titulo {
+    margin: 0;
+    padding: 0;
+    color: white;
+    letter-spacing: 1.5px
+}
+
+.formulario-login__input {
+    background: none;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.formulario-login__input::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.formulario-login__entrar {
+    border: none;
+    text-align: center;
+    outline: none;
+    padding: 12px 25px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+    color: #fff;
+    background: none;
+    border: 2px solid rgb(12,193,200);
+    font-size: 1.6rem;
+    transition: 0.2s ease;
+    width: 80%;
+}
+
+.formulario-login__entrar:hover {
+    background: rgb(12,193,200);
+}
+
+.formulario-login__campos {
+    width: 250px;
+    text-align: left;
+    
+}
+
+.formulario-login__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-login__logo img {
+    width: 150px;
+    display: block;
+}
+
+#voltar-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-decoration: none;
+    z-index: 111;
+    padding: 10px;
+    font-size:18px;
+}
+
+#voltar-home:before {
+    content: '\27A4';
+    display: block;
+    transform: rotate(180deg);
+    margin-right: 10px;
+    color: rgb(12,193,200);
+}
+
+@media (max-width: 919px) {
+    .formulario-login__logo {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .formulario-login__logo img {
+    width: 125px;
+    display: block;
+    }
+
+    .formulario-login {
+    width: 80%;
+    }
+}

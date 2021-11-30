@@ -1,7 +1,7 @@
 <?php include 'cabecalho_rodape/cabecalho.php'; ?>
     <main class="conteudo-pagina-margin-top" style="margin-top: 10vh; ">
         <div class="container-conteudo">
-            <form class="formulario-trabalhe-conosco" action="formulario/trabalhe-conosco-form.php" method="POST">
+            <form class="formulario-trabalhe-conosco" action="formulario/trabalhe-conosco-form.php" method="POST" enctype="multipart/form-data">
                 <div class="formulario-trabalhe-conosco__dados-pessoais">
                     <h1 class="formulario-trabalhe-conosco__titulo">Junte-se à nós</h1>
                     <p class="formulario-trabalhe-conosco__subtitulo">Dados pessoais</p>
@@ -17,15 +17,16 @@
                         <input name="inputCidade" type="text" id="inputCidade" class="formulario-trabalhe-conosco__input" required>
                         <label for="inputCidade" class="formulario-trabalhe-conosco__label">Cidade:</label>
                     </div>
-                    <div>
-                        <select name="selectEstado" class="formulario-trabalhe-conosco__select">
-                            <option value="" disabled selected>Selecione seu Estado:</option>
+                    <div class="formulario-trabalhe-conosco__container-select">
+                        <select class="formulario-trabalhe-conosco__select" name="selectEstado" class="formulario-trabalhe-conosco__select">
+                            <option value="" disabled selected>Selecione seu Estado</option>
                             <option value="São Paulo">São Paulo</option>
                             <option value="São Paulo">São Paulo</option>
                             <option value="São Paulo">São Paulo</option>
                             <option value="São Paulo">São Paulo</option>
                             <option value="São Paulo">São Paulo</option>
-                        </select>    
+                        </select>   
+                        <span class="formulario-trabalhe-conosco__icone-select"></span> 
                     </div>
                     <div class="formulario-trabalhe-conosco__campos">
                         <input name="inputTelefone" type="text" id="inputTelefone" class="formulario-trabalhe-conosco__input" required>
@@ -59,8 +60,8 @@
                         <label class="formulario-trabalhe-conosco__curriculo">
                             <p>Envie a nós seu currículo</p>
                             <div class="formulario-trabalhe-conosco__curriculo-container">
-                                <input id="arquivo" name="inputArquivo" type="file">
-                                <label for="arquivo">
+                                <input id="arquivo" name="arquivo" type="file">
+                                <label for="arquivo" class="labelFileText">
                                     <img src="img/trabalhe-conosco/icone-trabalhe-conosco-arquivo.png" alt="Ícone arquivo">
                                     Selecione seu arquivo
                                 </label>
