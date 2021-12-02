@@ -9,7 +9,7 @@
 
 .scroll {
     background-color:var(--color-background-cabecalho);
-    
+
 }
 
 .cabecalho-menu__lista li a {
@@ -160,10 +160,16 @@
 .cabecalho-menu__extend .btn-login{   
     display: block;
     text-decoration: none;
-    color: var(--color-cabecalho-link);
+    color: var(--color-button);
     border: 2px solid var(--color-button);
     padding: 0.8rem 3.0rem;
     border-radius: 5px;
+    background: none;
+    transition: 0.150s ease;
+}
+
+.cabecalho-menu__extend .btn-login:hover {   
+    background: rgba(255, 255, 255, 0.5);    
 }
 
 @media (max-width: $breakpoint-grande) {

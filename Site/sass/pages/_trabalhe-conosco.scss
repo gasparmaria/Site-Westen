@@ -288,4 +288,12 @@
     }
 }
 
+@media (max-width: 684px) {
+    .formulario-trabalhe-conosco {
+        &__dados-pessoais:after {
+            display: none;
+        }
+    }
+} 
+
 

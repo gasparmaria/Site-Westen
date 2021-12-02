@@ -124,7 +124,7 @@ $(document).ready(function(){
     document.addEventListener("scroll", () => {
         let distTop = window.pageYOffset;
 
-        if(distTop >= 100){
+        if(distTop >= 1){
             cabecalho.classList.add('scroll');
             cabecalhoMenu.classList.add('scroll');
         } else {
