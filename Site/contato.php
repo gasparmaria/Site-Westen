@@ -1,4 +1,8 @@
-<?php include 'cabecalho_rodape/cabecalho.php'; ?>
+<?php 
+    global $tituloPagina;
+    $tituloPagina = "Contato";
+    include 'cabecalho_rodape/cabecalho.php'; 
+?>
     <main class="conteudo-pagina-margin-top" style="margin-top: 10vh; ">
         <form class="formulario-contato" action="formulario/contato-form.php" method="POST">
             <div class="formulario-contato__conteudo">

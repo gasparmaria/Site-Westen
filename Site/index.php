@@ -1,4 +1,9 @@
-<?php include 'cabecalho_rodape/cabecalho.php'; ?>
+<?php
+    session_start();
+    include 'conexao.php';
+    include 'cabecalho_rodape/cabecalho.php';
+   
+?>
     <main style="margin-bottom: 10vh;">
         <div class="container-header-home">
             <div class="container-conteudo">

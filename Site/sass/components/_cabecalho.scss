@@ -17,6 +17,45 @@
     padding: 1.0rem;
     text-decoration: none;
     color: var(--color-cabecalho-link);
+    position: relative;
+    transition: 0.2s ease;
+
+}
+
+.cabecalho-menu__lista li a:hover {
+    color: $color-blue-turquoise;
+}
+
+.cabecalho-menu__lista li a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    margin-top: 10px;
+    background: $color-blue-turquoise;
+    transition: 0.2s ease;
+}
+
+.cabecalho-menu__lista li a:hover:after {
+    width: 100%;
+}
+
+.link-active {
+    color: $color-blue-turquoise !important;
+}
+
+.link-active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: $color-blue-turquoise;
 }
 
 .container-logo {
@@ -157,8 +196,16 @@
     cursor: pointer;
 }
 
-.cabecalho-menu__extend .btn-login{   
+.cabecalho-menu__extend .btn-login-sair img{   
+    width: 30px;
+    margin-right: 5px;
+}
+
+.cabecalho-menu__extend .btn-login-sair{   
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: var(--color-button);
     border: 2px solid var(--color-button);
@@ -168,7 +215,7 @@
     transition: 0.150s ease;
 }
 
-.cabecalho-menu__extend .btn-login:hover {   
+.cabecalho-menu__extend .btn-login-sair:hover {   
     background: rgba(255, 255, 255, 0.5);    
 }
 
@@ -227,7 +274,7 @@
             margin-top: 2.0rem;
         }
 
-        & .btn-login {
+        & .btn-login-sair {
             width: 90%;
             margin-top: 1.0rem;
             padding: 1.5rem;

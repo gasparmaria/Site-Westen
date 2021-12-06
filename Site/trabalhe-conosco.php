@@ -1,4 +1,8 @@
-<?php include 'cabecalho_rodape/cabecalho.php'; ?>
+<?php
+    global $tituloPagina;
+    $tituloPagina = "Trabalhe conosco";
+    include 'cabecalho_rodape/cabecalho.php'; 
+?>
     <main class="conteudo-pagina-margin-top" style="margin-top: 10vh; ">
         <div class="container-conteudo">
             <form class="formulario-trabalhe-conosco" action="formulario/trabalhe-conosco-form.php" method="POST" enctype="multipart/form-data">
@@ -19,12 +23,34 @@
                     </div>
                     <div class="formulario-trabalhe-conosco__container-select">
                         <select class="formulario-trabalhe-conosco__select" name="selectEstado" class="formulario-trabalhe-conosco__select">
-                            <option value="" disabled selected>Selecione seu Estado</option>
-                            <option value="São Paulo">São Paulo</option>
-                            <option value="São Paulo">São Paulo</option>
-                            <option value="São Paulo">São Paulo</option>
-                            <option value="São Paulo">São Paulo</option>
-                            <option value="São Paulo">São Paulo</option>
+                            <option value="" disabled selected>Selecione seu Estado:</option>
+                            <option value="AC/Acre">Acre</option>
+                            <option value="AL/Alagoas">Alagoas</option>
+                            <option value="AP/Amapá">Amapá</option>
+                            <option value="AM/Amazonas">Amazonas</option>
+                            <option value="BA/Bahia">Bahia</option>
+                            <option value="CE/Ceará">Ceará</option>
+                            <option value="DF/Distrito Federal">Distrito Federal</option>
+                            <option value="ES/Espírito Santo">Espírito Santo</option>
+                            <option value="GO/Goiás">Goiás</option>
+                            <option value="MA/Maranhão">Maranhão</option>
+                            <option value="MT/Mato Grosso">Mato Grosso</option>
+                            <option value="MS/Mato Grosso do Sul">Mato Grosso do Sul</option>
+                            <option value="MG/Minas Gerais">Minas Gerais</option>
+                            <option value="PA/Pará">Pará</option>
+                            <option value="PB/Paraíba">Paraíba</option>
+                            <option value="PR/Paraná">Paraná</option>
+                            <option value="PE/Pernambuco">Pernambuco</option>
+                            <option value="PI/Piauí">Piauí</option>
+                            <option value="RJ/Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="RN/Rio Grande do Norte">Rio Grande do Norte</option>
+                            <option value="RS/Rio Grande do Sul">Rio Grande do Sul</option>
+                            <option value="RO/Rondônia">Rondônia</option>
+                            <option value="RR/Roraima">Roraima</option>
+                            <option value="SC/Santa Catarina">Santa Catarina</option>
+                            <option value="SP/São Paulo">São Paulo</option>
+                            <option value="SE/Sergipe">Sergipe</option>
+                            <option value="TO/Tocantins">Tocantins</option>
                         </select>   
                         <span class="formulario-trabalhe-conosco__icone-select"></span> 
                     </div>
@@ -63,7 +89,7 @@
                                 <input id="arquivo" name="arquivo" type="file">
                                 <label for="arquivo" class="labelFileText">
                                     <img src="img/trabalhe-conosco/icone-trabalhe-conosco-arquivo.png" alt="Ícone arquivo">
-                                    Selecione seu arquivo
+                                    Selecione seu arquivo:
                                 </label>
                             </div>
                         </label>

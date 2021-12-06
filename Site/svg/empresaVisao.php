@@ -1,4 +1,4 @@
-<svg id="Layer_1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+<svg id="Layer_1" viewBox="20 0 490 490" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
 	.st0{fill:#5E91CC;}
 	.st1{fill:#E4E9F7;}
 	.st2{fill:#7AB3E2;}

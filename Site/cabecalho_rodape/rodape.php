@@ -55,6 +55,7 @@
     </footer>
     
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>

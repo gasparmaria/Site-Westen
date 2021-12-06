@@ -1,4 +1,10 @@
-<?php include 'cabecalho_rodape/cabecalho.php'; ?>
+<?php 
+    global $tituloPagina;
+    $tituloPagina = "Empresa";
+    include 'cabecalho_rodape/cabecalho.php'; 
+    include 'conexao.php';
+    $consulta = $cn->query("SELECT * FROM vwExibirFuncionario");
+?>
     <main class="conteudo-pagina-margin-top" style="margin-bottom: 10vh;">
         <div class="container-conteudo">
             <section class="empresa-info__item empresa-info__item-background-before">
@@ -118,80 +124,19 @@
 
         <section class="empresa-funcionarios">
             <div class="container-conteudo">
-                <div class="empresa-funcionario__item">
-                    <div class="empresa-funcionario__container-img">
-                        <img class="empresa-funcionario__img" src="img/empresa/foto-perfil-gabriel.jpg">
+                <?php
+                    while($listaFuncionarios = $consulta->fetch(PDO::FETCH_ASSOC)) { ?>
+                    <div class="empresa-funcionario__item">
+                        <div class="empresa-funcionario__container-img">
+                            <img class="empresa-funcionario__img" src="img/empresa/funcionarios/<?php echo $listaFuncionarios['Foto'];?>">
+                        </div>
+                        <div class="empresa-funcionario__texto">
+                            <h1 class="empresa-funcionario__nome"><?php echo $listaFuncionarios['NomeFuncionario'];?></h1>
+                            <p style="font-weight: bold; color: #0cc1c8; margin-top: 5px">Skills: </p>
+                            <p class="empresa-funcionario__cargo"><?php echo str_replace(",", "<br>",$listaFuncionarios['NomeCargo']);?></p>
+                        </div>
                     </div>
-                    <div class="empresa-funcionario__texto">
-                        <h1 class="empresa-funcionario__nome">Gabriel Soares</h1>
-                        <ul class="empresa-funcionario__cargo-lista">
-                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Front-End</li>
-                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Back-End</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="empresa-funcionario__item">
-                    <div class="empresa-funcionario__container-img">
-                        <img class="empresa-funcionario__img" src="img/empresa/foto-perfil-gabriel.jpg">
-                    </div>
-                    <div class="empresa-funcionario__texto">
-                        <h1 class="empresa-funcionario__nome">Gabriel Soares</h1>
-                        <ul class="empresa-funcionario__cargo-lista">
-                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Front-End</li>
-                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Back-End</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="empresa-funcionario__item">
-                    <div class="empresa-funcionario__container-img">
-                        <img class="empresa-funcionario__img" src="img/empresa/foto-perfil-gabriel.jpg">
-                    </div>
-                    <div class="empresa-funcionario__texto">
-                        <h1 class="empresa-funcionario__nome">Gabriel Soares</h1>
-                        <ul class="empresa-funcionario__cargo-lista">
-                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Front-End</li>
-                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Back-End</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="empresa-funcionario__item">
-                    <div class="empresa-funcionario__container-img">
-                        <img class="empresa-funcionario__img" src="img/empresa/foto-perfil-gabriel.jpg">
-                    </div>
-                    <div class="empresa-funcionario__texto">
-                        <h1 class="empresa-funcionario__nome">Gabriel Soares</h1>
-                        <ul class="empresa-funcionario__cargo-lista">
-                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Front-End</li>
-                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Back-End</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="empresa-funcionario__item">
-                    <div class="empresa-funcionario__container-img">
-                        <img class="empresa-funcionario__img" src="img/empresa/foto-perfil-gabriel.jpg">
-                    </div>
-                    <div class="empresa-funcionario__texto">
-                        <h1 class="empresa-funcionario__nome">Gabriel Soares</h1>
-                        <ul class="empresa-funcionario__cargo-lista">
-                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Front-End</li>
-                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Back-End</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="empresa-funcionario__item">
-                    <div class="empresa-funcionario__container-img">
-                        <img class="empresa-funcionario__img" src="img/empresa/foto-perfil-gabriel.jpg">
-                    </div>
-                    <div class="empresa-funcionario__texto">
-                        <h1 class="empresa-funcionario__nome">Gabriel Soares</h1>
-                        <ul class="empresa-funcionario__cargo-lista">
-                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Front-End</li>
-                            <li class="empresa-funcionario__cargo-lista__item">Desenvolvedor Back-End</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                
+                <?php } ?>
             </div>
         </section>
     </main>
