@@ -1,8 +1,10 @@
 <?php 
+    session_start();
+    include 'conexao.php';
+
     global $tituloPagina;
     $tituloPagina = "Parceiros";
     include 'cabecalho_rodape/cabecalho.php'; 
-    include 'conexao.php';
     $consulta = $cn->query("SELECT * FROM EmpresaParceira");
 ?>
     <main class="conteudo-pagina-margin-top">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    
     <link rel="styleSheet" type="text/css" href="./css/style.css">
     <link rel="shortcut icon" href="favicon.ico"/>
     <?php
@@ -34,7 +34,7 @@
                     <ul class="cabecalho-menu__lista">
                         <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == '' ? 'link-active' : '' ?>" href="index.php">Home</a><li>
                         <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == 'Empresa' ? 'link-active' : '' ?>" href="empresa.php">Empresa</a><li>
-                        <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == 'Portfílio' ? 'link-active' : '' ?>" href="portifolio.php">Portfólio</a><li>
+                        <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == 'Portfílio' ? 'link-active' : '' ?>" href="portfolio.php">Portfólio</a><li>
                         <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == 'Parceiros' ? 'link-active' : '' ?>" href="parceiros.php">Parceiros</a><li>
                         <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == 'Trabalhe conosco' ? 'link-active' : '' ?>" href="trabalhe-conosco.php">Trabalhe conosco</a><li>
                         <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == 'Contato' ? 'link-active' : '' ?>" href="contato.php">Contato</a><li>
@@ -56,8 +56,9 @@
                                     WHERE FuncionarioID = '$_SESSION[ID]'");
                             $mostraFuncionario = $consultaFuncionario->fetch(PDO::FETCH_ASSOC)
                         ?>
-                            <a href="#" style="border: none; cursor: default; background: none;" class="btn-login-sair"><img src="./img/icone-cabecalho-usuario.png" alt=""><?php echo $mostraFuncionario['NomeFuncionario']?></a>
-                            <a style="border: 2px solid gray; color: gray; background: none;" href="sair.php" class="btn-login-sair"><img style="width: 20px" src="./img/icone-cabecalho-logoff.png" alt="">Sair</a>
+                            <a href="#" style="padding: 0; border: none; cursor: default; background: none;" class="btn-login-sair"><img src="./img/icone-cabecalho-usuario.png" alt=""><?php echo $mostraFuncionario['NomeFuncionario']?></a>
+                            <a href="./administrador.php" style="padding: 0 10px; border: none; cursor: pointer; background: none;" class="btn-login-sair"><img src="./img/icone-cabecalho-administracao.png" alt=""></a>
+                            <a href="sair.php" style="padding: 5px 15px; border: 1px solid gray; color: gray; background: none;" class="btn-login-sair"><img src="./img/icone-cabecalho-logoff.png" alt="">Sair</a>
                         <?php } ?>
                     </div>
                 </div>

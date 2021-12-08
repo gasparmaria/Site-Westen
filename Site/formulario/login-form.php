@@ -14,11 +14,11 @@
 
     if($consulta->rowCount() == 1) {
         $exibeFuncionario = $consulta->fetch(PDO::FETCH_ASSOC);
+        if($exibeFuncionario)
         $_SESSION['ID'] = $exibeFuncionario['FuncionarioID'];
         header('location:../index.php');
 
     } else {
         header('location:login-erro.php');
     }
-
 ?>

@@ -1,4 +1,7 @@
 <?php
+    session_start();
+    include 'conexao.php';
+
     global $tituloPagina;
     $tituloPagina = "Trabalhe conosco";
     include 'cabecalho_rodape/cabecalho.php'; 

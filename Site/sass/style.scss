@@ -10,6 +10,7 @@
 //Components
 @import 'components/_cabecalho';
 @import 'components/_rodape';
+@import 'components/_formularios-administrador';
 
 //Layout
 @import 'layout/_container';
@@ -18,10 +19,13 @@
 @import 'pages/_pagina-inicial';
 @import 'pages/_empresa';
 @import 'pages/_parceiros';
-@import 'pages/_portifolio';
+@import 'pages/_portfolio';
 @import 'pages/_contato.scss';
 @import 'pages/_trabalhe-conosco';
 @import 'pages/_login';
+@import 'pages/_administrador';
+@import 'pages/_administrador-portfolio';
+@import 'pages/_administrador-lista-flex';
 
 //Vendors
 @import 'vendors/_slick.scss';

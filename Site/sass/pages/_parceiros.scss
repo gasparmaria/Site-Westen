@@ -27,10 +27,8 @@
         display: grid;
         justify-content: space-evenly;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 10px 40px;
+        gap: 0px 20px;
         overflow-x: hidden;
-        
-
         &__empresa {
             margin: 0;
             padding: 0;
@@ -39,9 +37,8 @@
             font-size: 2.8rem;
             margin-bottom: 10px;
         }
-
         &__imagem {
-            width: 70px;
+            max-width: 70px;
             display: block;
             margin: 0 auto;
         }        

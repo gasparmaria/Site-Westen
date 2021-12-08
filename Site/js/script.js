@@ -88,7 +88,7 @@ $(document).ready(function(){
     });
 
 
-    $('.portifolio-slider').slick({
+    $('.portfolio-slider').slick({
         dots: true,
         arrows: false,
         centerMode: true,
@@ -138,4 +138,5 @@ $(document).ready(function(){
     inputFileText.addEventListener('change', function(){
         document.querySelector('.labelFileText').innerHTML += this.files[0].name;
     });
+
 });

@@ -1,8 +1,10 @@
 <?php 
+    session_start();
+    include 'conexao.php';
+    
     global $tituloPagina;
     $tituloPagina = "Empresa";
     include 'cabecalho_rodape/cabecalho.php'; 
-    include 'conexao.php';
     $consulta = $cn->query("SELECT * FROM vwExibirFuncionario");
 ?>
     <main class="conteudo-pagina-margin-top" style="margin-bottom: 10vh;">
