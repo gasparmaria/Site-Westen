@@ -14,7 +14,7 @@
     $consultaServico = $cn->query("SELECT * FROM Servico");
 ?>
     <main class="conteudo-pagina-margin-top" style="margin-top: 10vh; ">
-    <div class="pagina-adicionar-projeto">
+    <div class="pagina-tamanho">    
         <div class="container-conteudo">
             <h1 class="formulario-administrador__titulo">Adicionar projeto</h1> 
             <hr class="titulo-line">

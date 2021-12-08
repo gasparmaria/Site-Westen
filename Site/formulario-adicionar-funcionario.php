@@ -13,7 +13,7 @@
     $consultaCargo = $cn->query("SELECT * FROM Cargo");
 ?>
     <main class="conteudo-pagina-margin-top" style="margin-top: 10vh; ">
-    <div class="pagina-funcionario-projeto">
+    <div class="pagina-tamanho">
         <div class="container-conteudo">
             <h1 class="formulario-administrador__titulo">Adicionar funcionário</h1> 
             <hr class="titulo-line">

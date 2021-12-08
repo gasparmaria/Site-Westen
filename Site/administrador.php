@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="cards-administracao__item">
-                    <h1 class="cards-administracao__titulo">Cargo</h1> 
+                    <h1 class="cards-administracao__titulo">Skill</h1> 
                     <hr>
                     <div class="cards-administracao__container-link">
                         <a class="cards-administracao__link" href="formulario-adicionar-cargo.php">Adicionar</a>
@@ -41,16 +41,16 @@
                     <h1 class="cards-administracao__titulo">Serviço</h1> 
                     <hr>
                     <div class="cards-administracao__container-link">
-                        <a class="cards-administracao__link" href="adicionar-produto.php">Adicionar</a>
-                        <a class="cards-administracao__link" href="Alterar-produto.php">Alterar / Excluir</a>
+                        <a class="cards-administracao__link" href="formulario-adicionar-servico.php">Adicionar</a>
+                        <a class="cards-administracao__link" href="deletar-alterar-servico.php">Alterar / Excluir</a>
                     </div>
                 </div>
                 <div class="cards-administracao__item">
-                    <h1 class="cards-administracao__titulo">Empresa parceira</h1> 
+                    <h1 class="cards-administracao__titulo">Empresa parceira</h1>
                     <hr>
                     <div class="cards-administracao__container-link">
-                        <a class="cards-administracao__link" href="adicionar-produto.php">Adicionar</a>
-                        <a class="cards-administracao__link" href="Alterar-produto.php">Alterar / Excluir</a>
+                        <a class="cards-administracao__link" href="formulario-adicionar-empresa-parceira.php">Adicionar</a>
+                        <a class="cards-administracao__link" href="deletar-alterar-empresa-parceira.php">Alterar / Excluir</a>
                     </div>
                 </div>
                 <div class="cards-administracao__item">

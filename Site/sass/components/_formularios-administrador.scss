@@ -152,16 +152,9 @@
 
 }
 
-.pagina-adicionar-projeto {
-    .formulario-administrador {
-        margin-left: 5%;
-    }
-}
-
 @media (max-width: 700px) {
-    .pagina-adicionar-projeto {
+    .pagina-tamanho {
         .formulario-administrador {
-            margin-left: 0;
             width: 100%;
         }
     }

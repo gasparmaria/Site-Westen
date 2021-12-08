@@ -10,20 +10,20 @@
     $tituloPagina = "Área do administrador";
     include 'cabecalho_rodape/cabecalho.php'; 
 
-    $id_cliente = $_GET['id_cliente'];
+    $id_cargo = $_GET['id_cargo'];
 
-    $consultaCliente = $cn->query("SELECT * FROM Cliente WHERE ClienteID = '$id_cliente'");
-    $mostraCliente = $consultaCliente->fetch(PDO::FETCH_ASSOC);
+    $consultaCargo = $cn->query("SELECT * FROM Cargo WHERE CargoID = '$id_cargo'");
+    $mostraCargo = $consultaCargo->fetch(PDO::FETCH_ASSOC);
 ?>
     <main class="conteudo-pagina-margin-top" style="margin-top: 10vh; margin-bottom: 20vh;">
-    <div class="pagina-adicionar-projeto">
+    <div class="pagina-tamanho">
         <div class="container-conteudo">
-            <h1 class="formulario-administrador__titulo">Alterar cliente</h1> 
+            <h1 class="formulario-administrador__titulo">Alterar skill</h1> 
             <hr class="titulo-line">
-            <form class="formulario-administrador" action="formulario/cliente/alterar-cliente-form.php?id_cliente=<?php echo $mostraCliente['ClienteID'];?>" method="POST" enctype="multipart/form-data">
+            <form class="formulario-administrador" action="formulario/cargo/alterar-cargo-form.php?id_cargo=<?php echo $mostraCargo['CargoID'];?>" method="POST" enctype="multipart/form-data">
                 <div class="formulario-administrador__campo">
                     <label class="formulario-administrador__label">Nome:</label>
-                    <input name="inputNome" type="text" class="formulario-administrador__input" value="<?php echo $mostraCliente['Nome']; ?>" required>
+                    <input name="inputNome" type="text" class="formulario-administrador__input" value="<?php echo $mostraCargo['NomeCargo']; ?>" required>
                 </div>
                 <button type="submit" class="formulario-administrador__button-submit">Alterar</button>
             </form>

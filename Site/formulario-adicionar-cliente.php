@@ -12,7 +12,7 @@
 
 ?>
     <main class="conteudo-pagina-margin-top" style="margin-top: 10vh; margin-bottom: 20vh;">
-    <div class="pagina-adicionar-projeto">
+    <div class="pagina-tamanho">
         <div class="container-conteudo">
             <h1 class="formulario-administrador__titulo">Adicionar cliente</h1> 
             <hr class="titulo-line">

@@ -10,6 +10,7 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 10px;
+
     h1 {
         margin: 0;
         font-size: 2.0rem;
@@ -32,5 +33,16 @@
         background: $color-blue-turquoise;
         transform: translateY(-5px);
         color: #fff;
+    }
+
+    img {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 630px) {
+    .container-lista {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
