@@ -17,8 +17,7 @@
                     </h1>
                     
                     <p class="empresa-info__paragrafo">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quibusdam modi inventore maiores commodi sit aliquid. Possimus eum fugit animi, voluptates corporis in quam quae debitis expedita saepe nemo magni.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ut eum voluptatum unde minima modi veniam ipsa. Consequatur, eius officiis! Natus commodi exercitationem, ullam aspernatur aliquam at repudiandae ipsum fuga.
+                        A Westen, empresa fundada em novembro de 2020, tem como objetivo inovar o mercado com sistemas de gerenciamento de negócios, de forma com que seja fácil atender clientes com excelência. Com sede na capital de São Paulo, oferecemos sistemas para qualquer lugar do Brasil, o que é possível graças ao nosso suporte remoto e em período integral. A excelência na segurança em nossos serviços, com rápida manutenção, deixa o sistema do cliente com mínimas vulnerabilidades a ataques.
                     </p>
                 </div>
                 <div class="empresa-info__imagem empresa-info__flex-item">
@@ -33,8 +32,8 @@
                     <hr class="empresa-info__titulo-linha-invert">
                 </h1>
                     <p class="empresa-info__paragrafo">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quibusdam modi inventore maiores commodi sit aliquid. Possimus eum fugit animi, voluptates corporis in quam quae debitis expedita saepe nemo magni.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ut eum voluptatum unde minima modi veniam ipsa. Consequatur, eius officiis! Natus commodi exercitationem, ullam aspernatur aliquam at repudiandae ipsum fuga.
+                        Projetar trabalhos com: respeito, qualidade, união, atitude crítica, didática
+                        construtivismo, integridade, inovação e execelência são apenas alguns do nossos valores. Valores estes que nos movem cada dia para cumprir nossos propósitos e objetivos relacionados a Westen.
                     </p>
                 </div>
                 <div class="empresa-info__imagem empresa-info__flex-item empresa-info__imagem-order">
@@ -49,8 +48,7 @@
                     <hr class="empresa-info__titulo-linha">
                 </h1>
                     <p class="empresa-info__paragrafo">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quibusdam modi inventore maiores commodi sit aliquid. Possimus eum fugit animi, voluptates corporis in quam quae debitis expedita saepe nemo magni.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ut eum voluptatum unde minima modi veniam ipsa. Consequatur, eius officiis! Natus commodi exercitationem, ullam aspernatur aliquam at repudiandae ipsum fuga.
+                        Criar o futuro, provendo segurança e privacidade a todos. Liderar, crescer e disseminar a tecnologia em todo o Brasil. Realizar conquistas e sempre projetar aplicações, softwares e sites com execelência.
                     </p>
                 </div>
                 <div class="empresa-info__imagem empresa-info__flex-item">
@@ -68,37 +66,37 @@
                 <h1 class="empresa-qualidade__titulo">Multidisciplinares<img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark"></h1>
                 
                 <p class="empresa-qualidade__texto">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
+                    Para uma empresa que é atualizada no mercado, nada mais importante do que ter funcionários multidisplinares, capazes de transformar a teoria em prática e saber lidar com diversas aplicações em diferentes contextos, inovando e fazendo trabalhos diversificados.
                 </p>
             </section>
             <section class="empresa-qualidade__item">
                 <h1 class="empresa-qualidade__titulo">Criatividade<img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark"></h1>
                 <p class="empresa-qualidade__texto">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
+                    Ser capaz de transformar ideias novas e originais em realidade, muito além de apenas pensar, é necessário ser criativo para verdadeiramente fazer a diferença e produzir um trabalho diversificado, é isso que a Westen propõe.
                 </p>
             </section>
             <section class="empresa-qualidade__item">
                 <h1 class="empresa-qualidade__titulo">Paciência<img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark"></h1>
                 <p class="empresa-qualidade__texto">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
+                    Possuir maturidade, observar a situação do ponto de vista do "adversário", pensar antes de começar uma discursão e não procurar culpados, são algumas características daqueles que são pacientes, qualidade fundamental no processo de planejamento e desenvolvimento de qualquer trabalho.
                 </p>
             </section>
             <section class="empresa-qualidade__item">
                 <h1 class="empresa-qualidade__titulo">Alta performance<img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark"></h1>
                 <p class="empresa-qualidade__texto">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
+                    Muito mais do que fazer um bom trabalho, é necessário ter alta performance em nossas aplicações para superar as expectativas e fidelizar nossos clientes. Cada um dos integrates acreditando no propósito da empresa e buscando sempre aprimorar seus conhecimentos e habilidades.
                 </p>
             </section>
             <section class="empresa-qualidade__item">
                 <h1 class="empresa-qualidade__titulo">Trabalho em Equipe<img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark"></h1>
                 <p class="empresa-qualidade__texto">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
+                Trabalhar em equipe é ter várias pessoas diferentes lutando por um objetivo igual e comum. E para que o trabalho tenha bons resultados, é fundamental que cada um, membros da Westen, deem o seu melhor.
                 </p>
             </section>
             <section class="empresa-qualidade__item">
                 <h1 class="empresa-qualidade__titulo">Atualizados<img class="checkmark" src="img/empresa/imagem-checkmark.png" alt="Check mark"></h1>
                 <p class="empresa-qualidade__texto">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia incidunt voluptatibus laboriosam quae? Temporibus ipsa, odit, minus consequuntur autem neque, doloribus dolorem nihil maiores laborum maxime excepturi odio omnis.
+                    Todo conhecimento e habilidades adquiridos ao longo do tempo não valem de nada se não estiverem alinhados com o mercado e a real necessidade dos nossos clientes, por conta disso, a Westen é uma empresa que busca sempre entender como o mercado se comporta e em quais pontos precisa focar.
                 </p>
             </section>
         </div>

@@ -19,6 +19,6 @@
         header('location:../index.php');
 
     } else {
-        header('location:login-erro.php');
+        header('location:../login-erro.php');
     }
 ?>

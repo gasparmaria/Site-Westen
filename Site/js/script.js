@@ -56,16 +56,6 @@ $(document).ready(function(){
     
     //Chamando método herdado pela classe MenuHamburguer
     menuHamburguer.init();
-    
-    //Script para ativar e desativar dark-mode
-
-    // const html = document.querySelector('html');
-    // const checkbox = document.querySelector('.input-checkbox-dark');
-    
-    // checkbox.addEventListener('change', () => {
-    //     html.classList.toggle('dark-mode');
-    // });
-
 
     //Script para dark-mode continuar ativo
     const darkModeStorage = localStorage.getItem('theme-page');
@@ -86,7 +76,6 @@ $(document).ready(function(){
             localStorage.removeItem('theme-page');
         }
     });
-
 
     $('.portfolio-slider').slick({
         dots: true,
@@ -117,7 +106,6 @@ $(document).ready(function(){
         ]
     });
 
-
     //Alterar cor do menu com rolagem do scroll;
     const cabecalho = document.querySelector('.cabecalho');
     const cabecalhoMenu = document.querySelector('.cabelho-menu');
@@ -138,5 +126,4 @@ $(document).ready(function(){
     inputFileText.addEventListener('change', function(){
         document.querySelector('.labelFileText').innerHTML += this.files[0].name;
     });
-
 });

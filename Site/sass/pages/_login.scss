@@ -41,6 +41,7 @@
     width: 100%;
     padding: 10px;
     margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 .formulario-login__input::placeholder {
@@ -72,7 +73,6 @@
 .formulario-login__campos {
     width: 250px;
     text-align: left;
-    
 }
 
 .formulario-login__logo {
@@ -100,6 +100,24 @@
     font-size:18px;
 }
 
+.login-erro {
+    .formulario-login__campos {
+        width: 100%;
+        text-align: center;
+    }
+    .formulario-login__titulo {
+        margin: 0;
+        padding: 0;
+        color: #c94444;
+        letter-spacing: 1.5px
+    }
+    .formulario-login__logo img {
+        margin-top: 15px;
+        width: 100px;
+        display: block;
+    }
+}
+
 #voltar-home:before {
     content: '\27A4';
     display: block;
@@ -107,6 +125,8 @@
     margin-right: 10px;
     color: rgb(12,193,200);
 }
+
+
 
 @media (max-width: 919px) {
     .formulario-login__logo {

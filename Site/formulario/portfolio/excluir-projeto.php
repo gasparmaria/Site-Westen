@@ -15,5 +15,5 @@
         unlink($pasta.$imagem);
     }
 
-    header('location:../../deletar-excluir-projeto.php');
+    header('location:../../deletar-alterar-projeto.php');
 ?>
