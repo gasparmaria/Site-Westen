@@ -1,0 +1,43 @@
+.body-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #dfdfdf;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    h1 {
+        background-color: rgb(231, 231, 231);
+        padding: 20px 40px;
+        color: #0cc1c8;
+        font-size: 2.5rem;
+        letter-spacing: 1.5px;
+        border-radius: 10px;
+        margin: 15px;
+        width: 512px;
+    }
+
+    h1.erro {
+        color: #eb2020;
+    }
+
+    h1 span {
+        padding: 10px;
+        color: #898785;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .body-email {
+        h1 {
+            width: 80%;
+        }
+    }
+}

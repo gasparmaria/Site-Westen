@@ -126,4 +126,68 @@ $(document).ready(function(){
     inputFileText.addEventListener('change', function(){
         document.querySelector('.labelFileText').innerHTML += this.files[0].name;
     });
+
+    $('.formulario-administrador').validate({
+        rules: {
+            inputTitulo: {
+                required: true
+            },
+            inputDescricao: {
+                required: true,
+                maxlength: 300
+            },
+            selectCliente: {
+                required: true
+            },
+            selectServico: {
+                required: true
+            },
+            inputNome: {
+                required: true,
+            },
+            inputEmail: {
+                required: true,
+                email: true
+            },
+            inputSenha: {
+                required: true,
+                rangelength: [8,8]
+            },
+            selectSkill: {
+                required: true
+            }
+        },
+        messages: {
+            inputTitulo: {
+                required: 'Preenchimento obrigatório.'
+            },
+            inputDescricao: {
+                required: 'Faça uma breve descrição no campo acima',
+                maxlength: 'Faça uma breve com no máximo 300 caacteres'
+            },
+            selectCliente: {
+                required: 'Informe um cliente.'
+            },
+            selectServico: {
+                required: 'Informe um serviço.'
+            },
+            inputNome: {
+                required: 'Preenchimento obrigatório.'
+            },
+            inputEmail: {
+                required: 'Preencha o campo e-mail.',
+                email: 'Preencha o campo com um e-mail válido'
+            },
+            inputSenha: {
+                required: 'Preencha o campo senha',
+                rangelength: 'A senha deve conter 8 caracteres'
+            },
+            selectSkill: {
+                required: 'Preencha o campo skill'
+            }
+        }
+    });    
 });
+
+
+    

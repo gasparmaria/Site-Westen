@@ -30,4 +30,20 @@
         </div>
     </div>
     </main>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script>
+        $('.formulario-administrador').validate({
+            rules: {
+                inputNome: {
+                    required: true,
+                }
+            },
+            messages: {
+                inputNome: {
+                    required: 'Preencha o campo nome.'
+                }
+            }
+        });
+    </script>
 <?php include 'cabecalho_rodape/rodape.php'; ?>

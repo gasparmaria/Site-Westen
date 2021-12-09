@@ -3,15 +3,19 @@
 
     $nome = $_POST['inputNome'];
 
-    try {
-        $inserir = $cn->query(
-            "CALL spInsertServico
-                ('$nome');
-            ");
-
-        header('location:../../administrador.php');
-
-    } catch(PDOException $e) {
-        echo $e->getMessage();
+    if($nome != '') {
+        try {
+            $inserir = $cn->query(
+                "CALL spInsertServico
+                    ('$nome');
+                ");
+    
+            header('location:../../administrador.php');
+    
+        } catch(PDOException $e) {
+            echo $e->getMessage();
+        }
+    } else {
+        header('location:../../erro-crud.php');
     }
 ?>

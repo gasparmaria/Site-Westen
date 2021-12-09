@@ -64,6 +64,7 @@
         color: var(--color-text-principal);
         font-size: 1.8rem;
         transition: 0.3s ease;
+        margin-bottom: 7px;
     }
     &__input:focus {
         padding: 12px 0;
@@ -133,6 +134,7 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        margin-bottom: 20px;
         & input {
             position: absolute;
             opacity: 0;
@@ -246,24 +248,23 @@
         outline: none;
         cursor: pointer;
         box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 7px;
     }
 
     .formulario-trabalhe-conosco__container-select {
         position: relative;
         width: 250px;
-        
     }
 
     .formulario-trabalhe-conosco__icone-select {
         position: absolute;
-        top: 50%;
+        top: 4px;
         right: 5px;
         border-radius: 5px;
-        transform: translateY(-50%);
         display: block;
         background: rgb(56, 56, 56);
-        height: 80%;
-        width: 40px;
+        height: 35px;
+        width: 35px;
         pointer-events: none;
     }
 
@@ -297,5 +298,15 @@
         }
     }
 } 
+
+#inputAreaInteresse-error {
+    position: absolute;
+    right: 0;
+    width: 130px;   
+    border: none;
+    border-right: 2px solid #ff2424;
+    padding: 0;
+    padding-left: 6px; 
+}
 
 

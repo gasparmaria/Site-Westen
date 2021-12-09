@@ -58,7 +58,7 @@
                         <span class="formulario-trabalhe-conosco__icone-select"></span> 
                     </div>
                     <div class="formulario-trabalhe-conosco__campos">
-                        <input name="inputTelefone" type="text" id="inputTelefone" class="formulario-trabalhe-conosco__input" required>
+                        <input name="inputTelefone" type="text" id="inputTelefoneTrabalheConosco" class="formulario-trabalhe-conosco__input inputTelefoneMask" required>
                         <label for="inputTelefone" class="formulario-trabalhe-conosco__label">Telefone:</label>
                     </div> 
                 </div>    
@@ -87,7 +87,7 @@
                             <span class="checkmark"></span>
                         </label>
                         <label class="formulario-trabalhe-conosco__curriculo">
-                            <p>Envie a nós seu currículo</p>
+                            <p>Envie a nós seu currículo (opcional)</p>
                             <div class="formulario-trabalhe-conosco__curriculo-container">
                                 <input id="arquivo" name="arquivo" type="file">
                                 <label for="arquivo" class="labelFileText">
@@ -105,5 +105,67 @@
     </main>
     <div class="iframe-container">
         <iframe class="iframe-container__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14633.28862947682!2d-46.7286281!3d-23.5209127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x671c9325c275132e!2sETEC%20Professor%20Basilides%20de%20Godoy.!5e0!3m2!1spt-BR!2sbr!4v1605321889136!5m2!1spt-BR!2sbr" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>   
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script>
+        $("#inputTelefoneTrabalheConosco").mask("(00) 00000-0000");
+        $('.formulario-trabalhe-conosco').validate({
+            rules: {
+                inputNome: {
+                    required: true
+                },
+                inputEmail: {
+                    required: true,
+                    email: true
+                },
+                inputNomeEmpresa: {
+                    required: true
+                },
+                inputTelefone: {
+                    required: true
+                },
+                textAreaMensagem: {
+                    required: true
+                },
+                inputCidade: {
+                    required: true
+                },
+                selectEstado: {
+                    required: true
+                },
+                inputAreaInteresse: {
+                    required: true,
+                }
+            },
+            messages: {
+                inputNome: {
+                    required: 'Preencha o campo nome.'
+                },
+                inputEmail: {
+                    required: 'Preencha o campo e-mail',
+                    email: 'Preencha o campo com um e-mail válido.'
+                },
+                inputNomeEmpresa: {
+                    required: 'Preencha o campo nome da empresa.'
+                },
+                inputTelefone: {
+                    required: 'Preencha o campo telefone.'
+                },
+                textAreaMensagem: {
+                    required: 'Deixe-nos uma mensagem.'
+                },
+                inputCidade: {
+                    required: 'Preencha o campo cidade.'
+                },
+                selectEstado: {
+                    required: 'Por favor, informe sua cidade.'
+                },
+                inputAreaInteresse: {
+                    required: 'Por favor informe uma área de interesse.'
+                }
+            }
+        });
+    </script> 
 <?php include 'cabecalho_rodape/rodape.php'; ?>

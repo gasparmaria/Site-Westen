@@ -34,7 +34,8 @@
                     email: true
                 },
                 inputSenha: {
-                    required: true
+                    required: true,
+                    rangelength: [8,8]
                 }
             },
             messages: {
@@ -43,7 +44,8 @@
                     email: 'Preencha um email válido'
                 },
                 inputSenha: {
-                    required: 'Preencha o campo senha'
+                    required: 'Preencha o campo senha',
+                    rangelength: 'A senha deve conter 8 caracteres'
                 }
             }
         });

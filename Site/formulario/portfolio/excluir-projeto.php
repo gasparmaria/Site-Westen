@@ -9,7 +9,7 @@
     $mostraProjeto = $consulta->fetch(PDO::FETCH_ASSOC);
     $excluir = $cn->query("DELETE FROM Projeto WHERE ProjetoID = '$id_projeto'");
 
-    $imagem=$mostraProjeto['Banner'];
+    $imagem = $mostraProjeto['Banner'];
 
     if($imagem!='') {
         unlink($pasta.$imagem);

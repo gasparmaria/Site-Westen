@@ -40,6 +40,7 @@
         color: var(--color-text-principal);
         font-size: 1.8rem;
         transition: 0.3s ease;
+        margin-bottom: 7px;
     }
     &__input:focus {
         padding: 12px 0;
@@ -110,6 +111,7 @@
         font-size: 1.8rem;
         color: var(--color-text-principal);
         letter-spacing: 0.12rem;
+        margin-bottom: 7px;
     }
 }
 

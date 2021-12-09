@@ -13,37 +13,41 @@
     $cliente = $_POST['selectCliente'];
     $servico = $_POST['selectServico'];
 
-    $imagem = $_FILES['inputBanner'];
-    $destino_imagem = "../../img/portfolio/";
+    if($titulo != '' && $descricao != '' && $cliente != '' && $servico != '') {
+        $imagem = $_FILES['inputBanner'];
+        $destino_imagem = "../../img/portfolio/";
 
-    if(!empty($imagem['name'])) {
-        preg_match("/\.(jpg|jpeg|png|gif){1}$/i",$imagem['name'],$extencao);
-        $imagem_nome = md5(uniqid(time())).".".$extencao[1];
-        $upload_imagem = 1;
+        if(!empty($imagem['name'])) {
+            preg_match("/\.(jpg|jpeg|png|gif){1}$/i",$imagem['name'],$extencao);
+            $imagem_nome = md5(uniqid(time())).".".$extencao[1];
+            $upload_imagem = 1;
 
-    } else {
-        $imagem_nome = $mostraBanner['Banner'];
-        $upload_imagem = 0;
-    }
-
-    try {
-        $alterar = $cn->query(
-            "UPDATE Projeto 
-            SET
-            Descricao = '$descricao',
-            Banner = '$imagem_nome',
-            Titulo = '$titulo',
-            FK_ClienteID = '$cliente',
-            FK_TipoServicoID = '$servico'
-            WHERE ProjetoID = '$id_projeto'
-            ");
-        if($upload_imagem == 1) {
-            move_uploaded_file($imagem['tmp_name'], $destino_imagem.$imagem_nome);
-
+        } else {
+            $imagem_nome = $mostraBanner['Banner'];
+            $upload_imagem = 0;
         }
-        header('location:../../portfolio.php');
 
-    } catch(PDOException $e) {
-        echo $e->getMessage();
+        try {
+            $alterar = $cn->query(
+                "UPDATE Projeto 
+                SET
+                Descricao = '$descricao',
+                Banner = '$imagem_nome',
+                Titulo = '$titulo',
+                FK_ClienteID = '$cliente',
+                FK_TipoServicoID = '$servico'
+                WHERE ProjetoID = '$id_projeto'
+                ");
+            if($upload_imagem == 1) {
+                move_uploaded_file($imagem['tmp_name'], $destino_imagem.$imagem_nome);
+
+            }
+            header('location:../../portfolio.php');
+
+        } catch(PDOException $e) {
+            echo $e->getMessage();
+        }
+    } else {
+        header('location:../../erro-crud.php');
     }
 ?>

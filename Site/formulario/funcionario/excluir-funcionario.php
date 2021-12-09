@@ -11,7 +11,8 @@
         "DELETE 
         FROM FuncionarioCargo 
         WHERE FuncionarioID = '$id_funcionario';
-        DELETE FROM Funcionario 
+        DELETE 
+        FROM Funcionario 
         WHERE FuncionarioID = '$id_funcionario';");
 
     $imagem = $mostraFuncionario['Foto'];
@@ -20,5 +21,5 @@
         unlink($pasta.$imagem);
     }
 
-    header('location:../../deletar-excluir-funcionario.php');
+    header('location:../../deletar-alterar-funcionario.php');
 ?>

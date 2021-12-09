@@ -6,17 +6,19 @@
 
     $nome = $_POST['inputNome'];
 
-    try {
-        $alterar = $cn->query(
-            "UPDATE Servico
-            SET
-            NomeServico = '$nome'
-            WHERE TipoServicoID = '$id_servico';
-            ");
-
-        header('location:../../deletar-alterar-servico.php');
-
-    } catch(PDOException $e) {
-        echo $e->getMessage();
+    if($nome != '') {
+        try {
+            $alterar = $cn->query(
+                "UPDATE Servico
+                SET
+                NomeServico = '$nome'
+                WHERE TipoServicoID = '$id_servico';
+                ");
+    
+            header('location:../../deletar-alterar-servico.php');
+    
+        } catch(PDOException $e) {
+            echo $e->getMessage();
+        }
     }
 ?>

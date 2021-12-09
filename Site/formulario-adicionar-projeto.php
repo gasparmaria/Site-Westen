@@ -58,6 +58,5 @@
             </form>
         </div>
     </div>
-        
     </main>
 <?php include 'cabecalho_rodape/rodape.php'; ?>

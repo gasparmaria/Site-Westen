@@ -6,17 +6,23 @@
 
     $nome = $_POST['inputNome'];
 
-    try {
-        $alterar = $cn->query(
-            "UPDATE Cliente
-            SET
-            Nome = '$nome'
-            WHERE ClienteID = '$id_cliente';
-            ");
-
-        header('location:../../deletar-alterar-cliente.php');
-
-    } catch(PDOException $e) {
-        echo $e->getMessage();
+    if($nome != '') {
+        try {
+            $alterar = $cn->query(
+                "UPDATE Cliente
+                SET
+                Nome = '$nome'
+                WHERE ClienteID = '$id_cliente';
+                ");
+    
+            header('location:../../deletar-alterar-cliente.php');
+    
+        } catch(PDOException $e) {
+            echo $e->getMessage();
+        }
+    } else {
+        header('location:../../erro-crud.php');
     }
+
+
 ?>
