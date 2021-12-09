@@ -11,37 +11,43 @@
       && $email != ''
       && $nomeEmpresa != ''
       && $telefone != ''
-      && $mesagem != '') {
+      && $mensagem != '') {
           $arquivo = "
           <html>
             <head>
-              <style>
-                .background-email {
-                  background: #1d1d24;
-                  padding: 15px;
-    
-                }
-                .container-logo {
-                  padding: 20px 0
-                  border-bottom: 2px solid 0cc0c7;
-                }
-                .container-logo img {
-                  display: block;
-                  width: 100px;
-                }
-                p {
-                  color: #0cc0c7;
-                }
-              </style>
+            <style>
+              .background-email {
+                background: #1d1d24;
+                padding: 15px 30px;
+                border-radius: 10px;
+              }
+              .container-titulo {
+                font-size: 25px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                padding: 10px 0;
+                border-bottom: 2px solid #fff;
+                width: 100%;
+              }
+              p {
+                color: #0cc0c7;
+              }
+              .color {
+                color: #fff;
+              }
+              a {
+                color: #fff !important;
+              }
+            </style>
             </head>
             <div class='background-email'>
-              <div class='container-logo'><img src='img/logo/logo-azul.png'></div>
-              <p><b>Nome: </b>$nome</p>
-              <p><b>E-mail: </b>$email</p>
-              <p><b>Nome da empresa: </b>$nomeEmpresa</p>
-              <p><b>Telefone: </b>$telefone</p>
-              <p><b>Mensagem: </b>$mensagem</p>
-              <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
+            <div class='container-titulo'><span class='color'>WESTEN</span></div>
+              <p><b>Nome: </b><span class='color'>$nome</span></p>
+              <p><b>E-mail: </b><span class='color'>$email</span></p>
+              <p><b>Nome da empresa: </b><span class='color'>$nomeEmpresa</span></p>
+              <p><b>Telefone: </b><span class='color'>$telefone</span></p>
+              <p><b>Mensagem: </b><span class='color'>$mensagem</span></p>
+              <p>Este e-mail foi enviado em <b><span class='color'>$data_envio</span></b> às <b><span class='color'>$hora_envio</span></b></p>
             </div>
           </html>
         ";

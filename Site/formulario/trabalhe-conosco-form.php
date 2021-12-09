@@ -33,32 +33,38 @@
             <style>
               .background-email {
                 background: #1d1d24;
-                padding: 15px;
-      
+                padding: 15px 30px;
+                border-radius: 10px;
               }
-              .container-logo {
-                padding: 20px 0
-                border-bottom: 2px solid 0cc0c7;
-              }
-              .container-logo img {
-                display: block;
-                width: 100px;
+              .container-titulo {
+                font-size: 25px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                padding: 10px 0;
+                border-bottom: 2px solid #fff;
+                width: 100%;
               }
               p {
                 color: #0cc0c7;
               }
+              .color {
+                color: #fff;
+              }
+              a {
+                color: #fff !important;
+              }
             </style>
           </head>
           <div class='background-email'>
-            <div class='container-logo'><img src='img/logo/logo-azul.png'></div>
-            <p><b>Nome: </b>$nome</p>
-            <p><b>E-mail: </b>$replyto</p>
-            <p><b>Nome da empresa: </b>$cidade</p>
-            <p><b>Telefone: </b>$estado</p>
-            <p><b>Mensagem: </b>$telefone</p>
-            <p><b>Cargo: </b>$cargo</p>
+            <div class='container-titulo'><span class='color'>WESTEN</span></div>
+            <p><b>Nome: </b><span class='color'>$nome</span></p>
+            <p><b>E-mail: </b><span class='color'>$replyto</span></p>
+            <p><b>Nome da cidade: </b><span class='color'>$cidade</span></p>
+            <p><b>Estado: </b><span class='color'>$estado</span></p>
+            <p><b>Mensagem: </b><span class='color'>$telefone</span></p>
+            <p><b>Cargo: </b><span class='color'>$cargo</span></p>
       
-            <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
+            <p>Este e-mail foi enviado em <b><span class='color'>$data_envio</b> às <b><span class='color'>$hora_envio</span></b></p>
           </div>
           </html>
           ";
