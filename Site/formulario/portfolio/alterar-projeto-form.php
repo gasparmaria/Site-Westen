@@ -20,6 +20,7 @@
         if(!empty($imagem['name'])) {
             preg_match("/\.(jpg|jpeg|png|gif){1}$/i",$imagem['name'],$extencao);
             $imagem_nome = md5(uniqid(time())).".".$extencao[1];
+            $imagem_nome_excluir = $mostraBanner['Banner'];
             $upload_imagem = 1;
 
         } else {
@@ -40,7 +41,7 @@
                 ");
             if($upload_imagem == 1) {
                 move_uploaded_file($imagem['tmp_name'], $destino_imagem.$imagem_nome);
-
+                unlink($destino_imagem.$imagem_nome_excluir);
             }
             header('location:../../portfolio.php');
 
