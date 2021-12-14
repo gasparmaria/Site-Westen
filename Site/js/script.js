@@ -186,7 +186,8 @@ $(document).ready(function(){
                 required: 'Preencha o campo skill'
             }
         }
-    });    
+    });
+
 });
 
 

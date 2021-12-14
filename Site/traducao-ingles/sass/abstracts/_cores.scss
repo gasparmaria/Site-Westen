@@ -1,0 +1,88 @@
+$color-blue-turquoise: #0cc1c8;
+
+//Modo claro
+:root {
+    //Containers
+    --color-dark-white: #fff;
+
+    --color-background-card: #fff;
+    --color-background-card-empresa: rgb(33, 41, 44);
+    --color-background-card-empresa-before: #fff;
+
+    --color-background-page-color: #edf0f2;
+    --color-background-cabecalho: rgba(235, 235, 235, 0.9);
+    --color-background-rodape: #252729;
+
+    
+    --color-background-menu-hamburguer: rgb(107, 107, 107);
+
+    --color-gradient-blue: linear-gradient(to right, rgb(11,173,179) 0%, rgb(15,246,255) 100%);
+    --color-header-home-svg: linear-gradient(to right, rgb(11,173,179) 0%, rgb(15,246,255) 100%);
+    --color-header-home-text-h1: linear-gradient(to right, rgb(15,246,255) 0%, rgb(11,173,179) 100%);
+
+    //Buttons
+    --color-button: rgb(12,193,200);
+
+    //Links
+    --color-cabecalho-link: rgb(40,42,53);
+
+    //Textos
+    --color-text-principal: rgb(38, 47, 51);
+    --color-text-secundario: #949494;
+
+    --color-text-dados-subtitulo: #353535;
+    --color-text-empresa-subtitulo:rgb(12,193,200);
+
+    --color-text-home-header: rgb(40,42,53);
+
+    //
+    --color-titulo-rodape: #fff;
+    --color-linha-rodape: #777777;
+
+    //
+    --color-hover-icone-rodape: rgb(0, 0, 0);
+
+    --linguagens-tecnologias: rgb(236, 236, 236);
+}
+//Mode escuro
+.dark-mode:root {
+    //Containers 
+    --color-dark-white:#1d1d24;
+
+    --color-background-card: #1d1d24;
+
+    --color-background-card-empresa-before: none;
+
+    --color-background-page-color: #1d1d24;
+    --color-background-cabecalho: rgb(30, 30, 37);
+    --color-background-rodape: #1d1d24;
+
+    --color-background-menu-hamburguer: rgb(255, 255, 255);
+
+    --color-gradient-blue: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    --color-header-home-svg: linear-gradient(to right, #330867 0%, #30CFD0 100%);
+    --color-header-home-text-h1: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    
+
+    //Buttons
+    --color-button: #ffffff;
+
+    //Links
+    --color-cabecalho-link: #ffffff;
+
+    //Textos  
+    --color-text-principal: #ffffff;
+    --color-text-secundario: #838383;
+    --color-text-home-header: #fff;
+
+    --color-text-dados-subtitulo: #fff;
+    --color-text-empresa-subtitulo: #fff;
+
+    //
+    --color-linha-rodape: #ffffff;
+
+    //
+    --color-hover-icone-rodape: #fff;
+
+    --linguagens-tecnologias: #ffffff11;
+}

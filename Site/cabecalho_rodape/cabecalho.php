@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"></script>
     <link rel="styleSheet" type="text/css" href="./css/style.css">
     <link rel="shortcut icon" href="favicon.ico"/>
     <?php
@@ -58,7 +59,7 @@
                         ?>
                             <a href="#" style="padding: 0; border: none; cursor: default; background: none;" class="btn-login-sair"><img src="./img/icone-cabecalho-usuario.png" alt=""><?php echo $mostraFuncionario['NomeFuncionario']?></a>
                             <a href="./administrador.php" style="padding: 0 10px; border: none; cursor: pointer; background: none;" class="btn-login-sair"><img src="./img/icone-cabecalho-administracao.png" alt=""></a>
-                            <a href="sair.php" style="padding: 5px 15px; border: 1px solid gray; color: gray; background: none;" class="btn-login-sair"><img src="./img/icone-cabecalho-logoff.png" alt="">Sair</a>
+                            <a href="sair.php" style="border: 1px solid gray; color: gray; background: none;" class="btn-login-sair"><img src="./img/icone-cabecalho-logoff.png" alt="">Sair</a>
                         <?php } ?>
                     </div>
                 </div>

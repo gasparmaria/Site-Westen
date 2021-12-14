@@ -2,20 +2,19 @@
         <div class="container">
             <div class="rodape-container-fluid">
                 <section class="rodape-item">
-                    <h1 class="rodape-item__titulo">HOME</h1>
-                    <a class="rodape-item__link" href="#">Planos para mercado</a>
-                    <a class="rodape-item__link" href="#">Sistemas</a>
-                    <a class="rodape-item__link" href="#">Funcionalidades</a>
+                    <h1 class="rodape-item__titulo">CONHEÇA-NOS</h1>
+                    <a class="rodape-item__link" href="portfolio.php">Projetos</a>
+                    <a class="rodape-item__link" href="index.php">Características gerais</a>
                 </section>
                 <hr class="linha-rodape">
                 <section class="rodape-item">
                     <h1 class="rodape-item__titulo">SUPORTE</h1>
-                    <a class="rodape-item__link" href="#">Contato</a>
+                    <a class="rodape-item__link" href="contato.php">Contato</a>
                 </section>
                 <hr class="linha-rodape">
                 <section class="rodape-item">
                     <h1 class="rodape-item__titulo">EMPRESA</h1>
-                    <a class="rodape-item__link" href="#">História</a>
+                    <a class="rodape-item__link" href="empresa.php">História</a>
                 </section>
                 <hr class="linha-rodape">
             </div>

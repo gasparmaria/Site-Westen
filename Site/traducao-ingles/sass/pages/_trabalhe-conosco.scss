@@ -1,0 +1,312 @@
+.formulario-trabalhe-conosco {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--color-text-principal);
+    &__dados-pessoais {
+        flex-grow: 1;
+        flex-basis: 300px;
+        padding: 2.5rem;
+        position: relative;
+    }
+    &__dados-pessoais:after {
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0; 
+        right: 0;
+        position: absolute;
+        border-right: 2px solid $color-blue-turquoise;
+        transform: scaleY(0.4);
+        z-index: -1;
+    }
+    &__dados-profissionais {
+        flex-grow: 1;
+        flex-basis: 300px;
+        padding: 2.5rem;
+    }
+    &__titulo {
+        text-transform: uppercase;
+        color: $color-blue-turquoise;
+        padding-bottom: 5px;
+        position: relative;
+        margin: 0;
+        font-size: 2.8rem;
+    }
+    &__titulo:after {
+        content: '';
+        display: block;
+        width: 70px;
+        height: 3px;
+        margin-top: 10px;
+        background-color: $color-blue-turquoise;
+    }
+    &__subtitulo {
+        margin-top: 5px;
+        font-size: 1.6rem;
+        color: var(--color-text-dados-titulo);
+    }
+    &__campos {
+        position: relative;
+        margin: 50px 0;
+        font-size: 1.6rem;
+    }   
+    &__input {
+        letter-spacing: 0.12rem;
+        display: block;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $color-blue-turquoise;
+        width: 100%;
+        padding: 0;
+        background: none;
+        color: var(--color-text-principal);
+        font-size: 1.8rem;
+        transition: 0.3s ease;
+        margin-bottom: 7px;
+    }
+    &__input:focus {
+        padding: 12px 0;
+
+    }
+    &__input:focus ~ .formulario-trabalhe-conosco__label,
+    &__input:valid ~ .formulario-trabalhe-conosco__label {
+        top: -20px;
+        left: 0;
+        font-size: 1.3rem;
+    }
+
+    &__label {
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        pointer-events: none;
+        transition: 0.5s ease;
+    }
+    &__background-container {
+        width: 100%;
+        flex: 1.5 1;
+    }
+    
+    &__background-container__imagem {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    
+    &__button-submit {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border: 2px solid $color-blue-turquoise;
+        transition: 0.2s ease;
+        background: none;
+    }
+    
+    &__button-submit:hover {
+        cursor: pointer;
+        background-color: $color-blue-turquoise; 
+    }
+    
+    &__link-submit {
+        color: $color-blue-turquoise;
+        display: block;
+        padding: 13px 40px;
+        text-decoration: none;
+        font-size: 1.8rem;
+    }
+
+    &__link-submit:hover {
+        color: #fff;
+    }
+
+    &__checkbox-radio-container {
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 1.6rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-bottom: 20px;
+        & input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        & .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: rgb(211, 211, 211);
+        }
+        & .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+    }
+
+    &__checkbox-radio-container:hover input ~ .checkmark {
+        background-color: rgb(172, 172, 172);
+    }
+
+    &__checkbox-radio-container input:checked ~ .checkmark {
+        background-color: $color-blue-turquoise;
+    }
+
+    &__checkbox-radio-container input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    &__checkbox-radio-container .checkmark:after {
+        left: 6px;
+        top: 2.2px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    &__curriculo{
+        & p {
+            margin: 2.5rem 0;
+            font-size: 1.6rem;
+        }
+        & p:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    &__curriculo-container {
+        
+        position: relative;
+        & input {
+            display: none;
+        }
+        
+        & label {
+            width: 300px;
+            color: white;
+            background-color: rgb(1, 178, 190);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            top: 0;
+            left: 0;
+            font-size: 1.6rem;
+            padding: 7px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.2s ease;
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+            & img {
+                width: 30px; 
+                margin-right: 10px;   
+            }
+        }
+        & label:hover {
+            background-color: rgb(12, 141, 150);
+        }
+    }
+    &__buton-submit {
+        border: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 4.5rem;
+        font-size: 1.8rem;
+        background: none;
+        transition: 0.2s ease;
+        color: $color-blue-turquoise;
+        padding: 10px 40px;
+        border: 2px solid $color-blue-turquoise;
+        cursor: pointer;
+    }
+    &__buton-submit:hover {
+        background-color: $color-blue-turquoise;
+        color: #fff;
+    }
+
+    .formulario-trabalhe-conosco__select {
+        font-size: 1.6rem;
+        padding: 10px;
+        background: $color-blue-turquoise;
+        color: #fff;
+        border: none;
+        width: 100%;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 7px;
+    }
+
+    .formulario-trabalhe-conosco__container-select {
+        position: relative;
+        width: 250px;
+    }
+
+    .formulario-trabalhe-conosco__icone-select {
+        position: absolute;
+        top: 4px;
+        right: 5px;
+        border-radius: 5px;
+        display: block;
+        background: rgb(56, 56, 56);
+        height: 35px;
+        width: 35px;
+        pointer-events: none;
+    }
+
+    .formulario-trabalhe-conosco__icone-select:after {
+        content: '\25BC';
+        position: absolute;
+        display: block;
+        font-size: 12px;
+        
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.iframe-container {
+    background-color: #000;
+    width: 100%;
+    height: 60vh;
+    &__mapa {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 684px) {
+    .formulario-trabalhe-conosco {
+        &__dados-pessoais:after {
+            display: none;
+        }
+    }
+} 
+
+#inputAreaInteresse-error {
+    position: absolute;
+    right: 0;
+    width: 130px;   
+    border: none;
+    border-right: 2px solid #ff2424;
+    padding: 0;
+    padding-left: 6px; 
+}
+
+

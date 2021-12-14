@@ -7,7 +7,8 @@
 
     if($nome != '' && $descricao != '') {
         $imagem = $_FILES['inputLogo'];
-        $destino_imagem = "../../img/parceiros/";
+
+        $destino_imagem = "../../../img/parceiros/";
     
         preg_match("/\.(jpg|jpeg|png|gif){1}$/i",$imagem['name'],$extencao);
     

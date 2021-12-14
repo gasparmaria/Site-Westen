@@ -1,0 +1,28 @@
+.cabecalho .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.rodape .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.0rem 0rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container-conteudo {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;    
+}
+
+.conteudo-pagina-margin-top {
+    margin-top: 10vh;
+}
+

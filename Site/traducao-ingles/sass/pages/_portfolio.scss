@@ -1,0 +1,114 @@
+.portfolio-titulo {    
+    color: #fff;
+    background: var(--color-gradient-blue);
+    padding: 2.5rem 0rem;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.portfolio-slider {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 200px));
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #fff;    
+    &__item {
+        padding: 0;
+        border-radius: 15px;
+        transition: all .4s ease;
+        position: relative;
+        transition: 0.2s ease;
+        cursor: pointer;     
+        background: linear-gradient(0deg, #007483, #000); 
+    }
+    &__item:hover > &__img{
+        opacity: 0.5;
+    }
+    &__titulo {
+        margin: 0;
+        font-size: 2.5rem;
+        word-wrap: break-word;
+        padding: 10px;
+    }
+    &__descricao {
+        position: absolute;
+        width: 100%;
+        max-height: 100%;
+        height: 100%;
+        z-index: 999;
+    }
+    &__descricao:hover > &__paragrafo {
+        opacity: 1;
+        padding-top: 0;
+    }
+    &__servico {
+        font-weight: bold;
+        padding: 0 10px;
+        text-decoration: underline;
+    }
+    &__paragrafo {
+        word-break: break-word;
+        transition: all 0.2s ease;
+        opacity: 0;
+        padding: 20px 10px 10px 10px;
+        margin-top: 50px;
+        max-height: 210px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            border-radius: 0px;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background: rgb(63, 63, 63); 
+            border-radius: 0px;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 370px;
+        object-fit: cover;
+        border-radius: 15px !important;
+        overflow: hidden !important;
+        transition: 0.2s ease;
+    }
+}
+
+.slick-dots {
+    margin-top: 15px !important;
+}
+
+.slick-initialized .slick-slide {
+    margin: 20px 40px;
+}
+
+.slick-center{
+    transform: scale(1.1);
+}
+
+@media (max-width: 1100px) {
+    .slick-initialized .slick-slide {
+        margin: 20px 50px;
+    }
+}
+
+@media (max-width: 670px) {
+    .slick-initialized .slick-slide {
+        margin: 20px 20px;
+    }
+}
+
+
+@media (max-width: 545px) {
+    .slick-initialized .slick-slide {
+        margin: 20px 25px;
+    }
+    .slick-dots {
+        margin-top: 20px !important;
+    }
+}

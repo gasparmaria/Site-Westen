@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"></script>
+    <link rel="styleSheet" type="text/css" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <?php
+        $tituloEmpresa = "Westen";
+        global $tituloPagina;
+        if($tituloPagina != '') {
+            $tituloEmpresa .= ' | ' . $tituloPagina;
+        }
+    ?>
+    <title><?php echo $tituloEmpresa; ?></title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <nav class="nav-menu">
+                <div class="container-logo">
+                    <a class="logo" href="index.php">
+                        <img class="logo-empresa" src="./img/logo/logo-azul.png" alt="Logo da empresa">
+                    </a>
+                </div>
+                <div class="menu-hamburguer">
+                    <div class="menu-hamburguer__linha1"></div>
+                    <div class="menu-hamburguer__linha2"></div>
+                    <div class="menu-hamburguer__linha3"></div>
+                </div>
+                <div class="cabecalho-menu">
+                    <ul class="cabecalho-menu__lista">
+                        <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == '' ? 'link-active' : '' ?>" href="index.php">Home</a><li>
+                        <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == 'Empresa' ? 'link-active' : '' ?>" href="empresa.php">Company</a><li>
+                        <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == 'Portfílio' ? 'link-active' : '' ?>" href="portfolio.php">Portfolio</a><li>
+                        <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == 'Parceiros' ? 'link-active' : '' ?>" href="parceiros.php">Partners</a><li>
+                        <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == 'Trabalhe conosco' ? 'link-active' : '' ?>" href="trabalhe-conosco.php">Work with us</a><li>
+                        <li class="cabecalho-menu__item"><a class="<?php echo $tituloPagina == 'Contato' ? 'link-active' : '' ?>" href="contato.php">Contact</a><li>
+                    </ul>
+                    <div class="cabecalho-menu__extend">
+                        <label class="label-mode-dark"> 
+                            <input type="checkbox" class="input-checkbox-dark">
+                            <span class="check-mode-dark"></span>
+                        </label>
+                        <?php include './svg/bandeiraBrasil.php' ?>
+
+                        <?php
+                            if(empty($_SESSION['ID'])) { ?>
+                            <a href="login.php" class="btn-login-sair">Login</a>
+                        <?php } else { 
+                            $consultaFuncionario = $cn->query(
+                                "SELECT NomeFuncionario 
+                                    FROM Funcionario 
+                                    WHERE FuncionarioID = '$_SESSION[ID]'");
+                            $mostraFuncionario = $consultaFuncionario->fetch(PDO::FETCH_ASSOC)
+                        ?>
+                            <a href="#" style="padding: 0; border: none; cursor: default; background: none;" class="btn-login-sair"><img src="./img/icone-cabecalho-usuario.png" alt=""><?php echo $mostraFuncionario['NomeFuncionario']?></a>
+                            <a href="./administrador.php" style="padding: 0 10px; border: none; cursor: pointer; background: none;" class="btn-login-sair"><img src="./img/icone-cabecalho-administracao.png" alt=""></a>
+                            <a href="sair.php" style="border: 1px solid gray; color: gray; background: none;" class="btn-login-sair"><img src="./img/icone-cabecalho-logoff.png" alt="">Logout</a>
+                        <?php } ?>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
